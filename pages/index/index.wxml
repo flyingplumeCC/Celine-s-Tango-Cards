@@ -1,0 +1,109 @@
+<view class="page">
+  <view class="header">
+    <view class="header-top">
+      <text class="eyebrow">XI-CHAN JAPANESE</text>
+      <button wx:if="{{reviewMode}}" class="review-button" bindtap="closeReview">
+        返回测验
+      </button>
+      <button wx:else class="review-button" bindtap="openReview">
+        复习<text wx:if="{{reviewWordCount > 0}}" class="review-badge">{{reviewWordCount}}</text>
+      </button>
+    </view>
+    <text class="title">{{libraryTitle}}</text>
+    <text class="subtitle">{{reviewMode ? '集中复习多次不熟的单词' : '看到中文后，想一想对应的日语表达'}}</text>
+  </view>
+
+  <view wx:if="{{reviewMode}}" class="review-list">
+    <view wx:if="{{reviewWords.length === 0}}" class="review-empty">
+      <text class="review-empty-title">暂时没有需要复习的单词</text>
+      <text class="review-empty-text">累计按过 3 次“我不熟”的单词会显示在这里。</text>
+    </view>
+
+    <view wx:for="{{reviewWords}}" wx:key="japanese" class="review-card">
+      <view class="review-card-top">
+        <text class="category">{{item.category}}</text>
+        <text class="unknown-count">不熟 {{item.unknownCount}} 次</text>
+      </view>
+      <text class="review-chinese">{{item.chinese}}</text>
+      <text class="review-japanese">{{item.japanese}}</text>
+      <text class="review-kana">{{item.kana}}</text>
+      <view class="divider"></view>
+      <text class="example-japanese">{{item.example}}</text>
+      <text class="example-chinese">{{item.exampleChinese}}</text>
+    </view>
+  </view>
+
+  <view wx:elif="{{!completed}}" class="quiz-card">
+    <view class="card-meta">
+      <text class="category">{{currentWord.category}}</text>
+      <text class="count">第 {{questionNumber}} 题</text>
+    </view>
+
+    <view class="question">
+      <text class="question-label">这个词用日语怎么说？</text>
+      <text class="chinese-word">{{currentWord.chinese}}</text>
+    </view>
+
+    <view wx:if="{{showAnswer}}" class="answer">
+      <view class="answer-main">
+        <text class="japanese">{{currentWord.japanese}}</text>
+        <text class="kana">{{currentWord.kana}}</text>
+      </view>
+      <view class="divider"></view>
+      <view class="example">
+        <text class="example-label">例句</text>
+        <text class="example-japanese">{{currentWord.example}}</text>
+        <text class="example-chinese">{{currentWord.exampleChinese}}</text>
+      </view>
+    </view>
+
+    <view wx:else class="answer-placeholder">
+      <text>答案和例句暂时隐藏</text>
+    </view>
+  </view>
+
+  <button
+    wx:if="{{!reviewMode && !completed && !showAnswer}}"
+    class="primary-button"
+    bindtap="showAnswer"
+  >
+    查看答案
+  </button>
+
+  <view wx:if="{{!reviewMode && !completed && showAnswer}}" class="answer-actions">
+    <button
+      class="answer-button delete-button"
+      bindtap="deleteCurrentWord"
+    >
+      可删
+    </button>
+    <button
+      class="answer-button unknown-button"
+      data-known="{{false}}"
+      bindtap="markAnswer"
+    >
+      我不熟
+    </button>
+    <button
+      class="answer-button known-button"
+      data-known="{{true}}"
+      bindtap="markAnswer"
+    >
+      我认识
+    </button>
+  </view>
+
+  <view wx:if="{{!reviewMode && completed}}" class="complete-card">
+    <text class="complete-title">全部掌握了！</text>
+    <text class="complete-text">本轮的 {{answeredCount}} 次作答已经完成。</text>
+    <button class="primary-button restart-button" bindtap="restartQuiz">
+      重新开始
+    </button>
+  </view>
+
+  <view wx:if="{{!reviewMode}}" class="score">
+    <text class="score-label">正确率：</text>
+    <text class="score-value">{{accuracy}}%</text>
+    <text class="score-detail">待掌握 {{remainingCount}} 个</text>
+  </view>
+</view>

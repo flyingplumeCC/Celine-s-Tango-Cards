@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "希酱学日语",
+    "navigationBarBackgroundColor": "#f7f4ee",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f4ee",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2"
+}

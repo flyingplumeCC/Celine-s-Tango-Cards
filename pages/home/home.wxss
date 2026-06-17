@@ -1,0 +1,100 @@
+.page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 88rpx 32rpx 48rpx;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64rpx;
+}
+
+.eyebrow {
+  margin-bottom: 16rpx;
+  color: #cc5f4a;
+  font-size: 20rpx;
+  font-weight: 700;
+  letter-spacing: 4rpx;
+}
+
+.title {
+  color: #25313b;
+  font-size: 58rpx;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 16rpx;
+  color: #7c858c;
+  font-size: 27rpx;
+}
+
+.library-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28rpx;
+}
+
+.library-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 240rpx;
+  padding: 40rpx;
+  border-radius: 28rpx;
+  box-shadow: 0 18rpx 48rpx rgba(67, 54, 42, 0.08);
+}
+
+.library-card.travel {
+  background: #fff7f2;
+  box-shadow: inset 0 0 0 2rpx #f0ded3, 0 18rpx 48rpx rgba(67, 54, 42, 0.08);
+}
+
+.library-card.business {
+  background: #f2f7f5;
+  box-shadow: inset 0 0 0 2rpx #d7e5df, 0 18rpx 48rpx rgba(67, 54, 42, 0.08);
+}
+
+.library-card.custom {
+  background: #f5f3ff;
+  box-shadow: inset 0 0 0 2rpx #ded8f2, 0 18rpx 48rpx rgba(67, 54, 42, 0.08);
+}
+
+.library-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.library-title {
+  color: #25313b;
+  font-size: 46rpx;
+  font-weight: 700;
+}
+
+.library-subtitle {
+  margin-top: 16rpx;
+  color: #68747d;
+  font-size: 25rpx;
+}
+
+.library-count {
+  margin-top: 30rpx;
+  color: #9b7f68;
+  font-size: 22rpx;
+  font-weight: 600;
+}
+
+.business .library-count {
+  color: #4f8b72;
+}
+
+.custom .library-count {
+  color: #7865b8;
+}
+
+.library-arrow {
+  color: #b2a79d;
+  font-size: 64rpx;
+  font-weight: 300;
+}

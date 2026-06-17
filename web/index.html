@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>希酱学日语</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section id="home-view" class="view">
+        <div class="hero">
+          <span class="eyebrow">XI-CHAN JAPANESE</span>
+          <h1>希酱学日语</h1>
+          <p>按场景练习常用日语单词</p>
+        </div>
+        <div id="library-list" class="library-list"></div>
+      </section>
+
+      <section id="quiz-view" class="view hidden">
+        <header class="header">
+          <div class="header-top">
+            <button id="back-button" class="ghost-button">返回主页</button>
+            <button id="review-button" class="review-button">复习</button>
+          </div>
+          <span class="eyebrow">XI-CHAN JAPANESE</span>
+          <h1 id="quiz-title">希酱学日语</h1>
+          <p id="quiz-subtitle">看到中文后，想一想对应的日语表达</p>
+        </header>
+
+        <section id="quiz-panel">
+          <article id="quiz-card" class="quiz-card">
+            <div class="card-meta">
+              <span id="word-category" class="category"></span>
+              <span id="question-number" class="count"></span>
+            </div>
+
+            <div class="question">
+              <span class="question-label">这个词用日语怎么说？</span>
+              <strong id="chinese-word" class="chinese-word"></strong>
+            </div>
+
+            <div id="answer-box" class="answer hidden">
+              <div class="answer-main">
+                <strong id="japanese-word" class="japanese"></strong>
+                <span id="kana-word" class="kana"></span>
+              </div>
+              <div class="divider"></div>
+              <div class="example">
+                <span class="example-label">例句</span>
+                <span id="example-japanese" class="example-japanese"></span>
+                <span id="example-chinese" class="example-chinese"></span>
+              </div>
+            </div>
+
+            <div id="answer-placeholder" class="answer-placeholder">答案和例句暂时隐藏</div>
+          </article>
+
+          <button id="show-answer-button" class="primary-button">查看答案</button>
+          <div id="answer-actions" class="answer-actions hidden">
+            <button id="delete-button" class="answer-button delete-button">可删</button>
+            <button id="unknown-button" class="answer-button unknown-button">我不熟</button>
+            <button id="known-button" class="answer-button known-button">我认识</button>
+          </div>
+
+          <article id="complete-card" class="complete-card hidden">
+            <strong class="complete-title">全部掌握了！</strong>
+            <span id="complete-text" class="complete-text"></span>
+            <button id="restart-button" class="primary-button restart-button">重新开始</button>
+          </article>
+
+          <div class="score">
+            <span>正确率：</span>
+            <strong id="accuracy">0%</strong>
+            <span id="remaining-count">待掌握 0 个</span>
+          </div>
+        </section>
+
+        <section id="review-panel" class="review-list hidden"></section>
+      </section>
+    </main>
+
+    <script src="../data/words.js"></script>
+    <script src="../data/businessWords.js"></script>
+    <script src="../data/customWords.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

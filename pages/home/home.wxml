@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="hero">
+    <text class="eyebrow">XI-CHAN JAPANESE</text>
+    <text class="title">希酱学日语</text>
+    <text class="subtitle">按场景练习常用日语单词</text>
+  </view>
+
+  <view class="library-list">
+    <view
+      wx:for="{{libraries}}"
+      wx:key="id"
+      class="library-card {{item.accent}}"
+      data-library="{{item.id}}"
+      bindtap="openLibrary"
+    >
+      <view class="library-content">
+        <text class="library-title">{{item.title}}</text>
+        <text class="library-subtitle">{{item.subtitle}}</text>
+        <text class="library-count">共 {{item.wordCount}} 个单词</text>
+      </view>
+      <text class="library-arrow">›</text>
+    </view>
+  </view>
+</view>
