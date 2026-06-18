@@ -542,6 +542,46 @@ const customWords = [
     kana: 'ほんらい',
     example: '本来なら今日は休みです。',
     exampleChinese: '按理说今天本来是休息日。'
+  },
+  {
+    category: '表达',
+    chinese: '面向；适合',
+    japanese: '向け',
+    kana: 'むけ',
+    example: 'これは初心者向けの教材です。',
+    exampleChinese: '这是面向初学者的教材。'
+  },
+  {
+    category: '动词',
+    chinese: '相关；涉及',
+    japanese: '関わる',
+    kana: 'かかわる',
+    example: '多くの人がこの計画に関わっています。',
+    exampleChinese: '很多人参与了这个计划。'
+  },
+  {
+    category: '动词',
+    chinese: '继续',
+    japanese: '続ける',
+    kana: 'つづける',
+    example: '毎日少しずつ勉強を続けます。',
+    exampleChinese: '每天一点点继续学习。'
+  },
+  {
+    category: '形容',
+    chinese: '复杂；麻烦',
+    japanese: 'ややこしい',
+    kana: 'ややこしい',
+    example: 'この手続きは少しややこしいです。',
+    exampleChinese: '这个手续有点复杂。'
+  },
+  {
+    category: '表达',
+    chinese: '轻松地；随意地',
+    japanese: '気軽に',
+    kana: 'きがるに',
+    example: '分からないことがあれば、気軽に聞いてください。',
+    exampleChinese: '有不懂的地方，请随时问。'
   }
 ]
 
