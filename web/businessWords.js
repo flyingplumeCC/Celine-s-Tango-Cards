@@ -638,6 +638,382 @@ const businessWords = [
     kana: 'てすうりょう',
     example: '海外送金には手数料がかかります。',
     exampleChinese: '海外汇款需要手续费。'
+  },
+  {
+    category: '商务敬语',
+    chinese: '共享；告知',
+    japanese: 'ご共有',
+    kana: 'ごきょうゆう',
+    example: '資料をご共有いただきありがとうございます。',
+    exampleChinese: '感谢您共享资料。'
+  },
+  {
+    category: '商务敬语',
+    chinese: '处理；应对',
+    japanese: 'ご対応',
+    kana: 'ごたいおう',
+    example: '早速のご対応ありがとうございます。',
+    exampleChinese: '感谢您迅速处理。'
+  },
+  {
+    category: '商务敬语',
+    chinese: '继续；今后也',
+    japanese: '引き続き',
+    kana: 'ひきつづき',
+    example: '引き続きよろしくお願いいたします。',
+    exampleChinese: '今后也请多多关照。'
+  },
+  {
+    category: '商务沟通',
+    chinese: '认知不一致',
+    japanese: '認識違い',
+    kana: 'にんしき ちがい',
+    example: '認識違いがないように確認します。',
+    exampleChinese: '为避免认知不一致，进行确认。'
+  },
+  {
+    category: '商务沟通',
+    chinese: '认知不足',
+    japanese: '認識不足',
+    kana: 'にんしき ぶそく',
+    example: 'こちらの認識不足で申し訳ございません。',
+    exampleChinese: '由于我方认知不足，非常抱歉。'
+  },
+  {
+    category: '商务沟通',
+    chinese: '龃龉；分歧',
+    japanese: '齟齬',
+    kana: 'そご',
+    example: '双方の認識に齟齬がありました。',
+    exampleChinese: '双方认知存在分歧。'
+  },
+  {
+    category: '商务沟通',
+    chinese: '沟通错位',
+    japanese: '行き違い',
+    kana: 'いきちがい',
+    example: 'メールの行き違いでしたら失礼いたしました。',
+    exampleChinese: '如果是邮件沟通错位，还请见谅。'
+  },
+  {
+    category: '商务沟通',
+    chinese: '误解',
+    japanese: '誤解',
+    kana: 'ごかい',
+    example: '誤解を招く表現を修正します。',
+    exampleChinese: '修改容易引起误解的表达。'
+  },
+  {
+    category: '商务沟通',
+    chinese: '混乱',
+    japanese: '混乱',
+    kana: 'こんらん',
+    example: '現場で混乱が生じています。',
+    exampleChinese: '现场出现了混乱。'
+  },
+  {
+    category: '商务沟通',
+    chinese: '麻烦；工夫',
+    japanese: '手数',
+    kana: 'てすう',
+    example: 'お手数をおかけして申し訳ございません。',
+    exampleChinese: '给您添麻烦，非常抱歉。'
+  },
+  {
+    category: '费用',
+    chinese: '一整套',
+    japanese: '一式',
+    kana: 'いっしき',
+    example: '必要書類一式を送付します。',
+    exampleChinese: '发送全套必要文件。'
+  },
+  {
+    category: '费用',
+    chinese: '费用；收费',
+    japanese: '料金',
+    kana: 'りょうきん',
+    example: '追加料金が発生します。',
+    exampleChinese: '会产生追加费用。'
+  },
+  {
+    category: '费用',
+    chinese: '费用；成本',
+    japanese: '費用',
+    kana: 'ひよう',
+    example: '費用の目安を教えてください。',
+    exampleChinese: '请告诉我费用的大致标准。'
+  },
+  {
+    category: '费用',
+    chinese: '预算上比较困难',
+    japanese: '予算的に厳しい',
+    kana: 'よさんてきに きびしい',
+    example: 'その金額は予算的に厳しいです。',
+    exampleChinese: '这个金额从预算上来说比较困难。'
+  },
+  {
+    category: '商务沟通',
+    chinese: '讨论；考虑',
+    japanese: '検討',
+    kana: 'けんとう',
+    example: '社内で検討いたします。',
+    exampleChinese: '我们会在公司内部讨论。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '民宿；短租民宿',
+    japanese: '民泊',
+    kana: 'みんぱく',
+    example: '民泊の運営を開始します。',
+    exampleChinese: '开始运营民宿。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '运营',
+    japanese: '運営',
+    kana: 'うんえい',
+    example: '施設の運営体制を確認します。',
+    exampleChinese: '确认设施的运营体制。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '持续运营',
+    japanese: '継続運営',
+    kana: 'けいぞく うんえい',
+    example: '継続運営に必要な費用を見積もります。',
+    exampleChinese: '估算持续运营所需费用。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '设备',
+    japanese: '設備',
+    kana: 'せつび',
+    example: '設備の点検を行います。',
+    exampleChinese: '进行设备检查。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '缺少的备品',
+    japanese: '不足備品',
+    kana: 'ふそく びひん',
+    example: '不足備品をリストアップします。',
+    exampleChinese: '列出缺少的备品。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '各种安排',
+    japanese: '各種手配',
+    kana: 'かくしゅ てはい',
+    example: '開業に向けて各種手配を進めます。',
+    exampleChinese: '为开业推进各种安排。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '垃圾回收',
+    japanese: 'ゴミ回収',
+    kana: 'ごみ かいしゅう',
+    example: 'ゴミ回収の日程を確認します。',
+    exampleChinese: '确认垃圾回收日程。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '促销资料',
+    japanese: '販促資料',
+    kana: 'はんそく しりょう',
+    example: '販促資料を作成しました。',
+    exampleChinese: '制作了促销资料。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '刊登资料',
+    japanese: '掲載資料',
+    kana: 'けいさい しりょう',
+    example: '掲載資料の内容を確認してください。',
+    exampleChinese: '请确认刊登资料的内容。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '告示物；张贴物',
+    japanese: '掲示物',
+    kana: 'けいじぶつ',
+    example: '入口に掲示物を設置します。',
+    exampleChinese: '在入口设置张贴物。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '设置；安装',
+    japanese: '設置',
+    kana: 'せっち',
+    example: '防犯カメラを設置します。',
+    exampleChinese: '安装监控摄像头。'
+  },
+  {
+    category: '许可手续',
+    chinese: '行政书士',
+    japanese: '行政書士',
+    kana: 'ぎょうせいしょし',
+    example: '行政書士に許可申請を依頼します。',
+    exampleChinese: '委托行政书士办理许可申请。'
+  },
+  {
+    category: '许可手续',
+    chinese: '现场调查',
+    japanese: '現地調査',
+    kana: 'げんち ちょうさ',
+    example: '来週、現地調査を行います。',
+    exampleChinese: '下周进行现场调查。'
+  },
+  {
+    category: '许可手续',
+    chinese: '许可申请',
+    japanese: '許可申請',
+    kana: 'きょか しんせい',
+    example: '民泊の許可申請を進めています。',
+    exampleChinese: '正在推进民宿许可申请。'
+  },
+  {
+    category: '许可手续',
+    chinese: '许可证',
+    japanese: '許可証',
+    kana: 'きょかしょう',
+    example: '許可証の写しを提出してください。',
+    exampleChinese: '请提交许可证复印件。'
+  },
+  {
+    category: '许可手续',
+    chinese: '发行；开具',
+    japanese: '発行',
+    kana: 'はっこう',
+    example: '許可証が発行されました。',
+    exampleChinese: '许可证已经签发。'
+  },
+  {
+    category: '许可手续',
+    chinese: '保健所',
+    japanese: '保健所',
+    kana: 'ほけんじょ',
+    example: '保健所に相談しました。',
+    exampleChinese: '已经咨询了保健所。'
+  },
+  {
+    category: '许可手续',
+    chinese: '提交照片',
+    japanese: '写真提出',
+    kana: 'しゃしん ていしゅつ',
+    example: '追加で写真提出が必要です。',
+    exampleChinese: '需要追加提交照片。'
+  },
+  {
+    category: '许可手续',
+    chinese: '指出事项',
+    japanese: '指摘事項',
+    kana: 'してき じこう',
+    example: '指摘事項を修正しました。',
+    exampleChinese: '已经修改了指出事项。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '开通燃气/水电',
+    japanese: '開栓',
+    kana: 'かいせん',
+    example: 'ガスの開栓を手配します。',
+    exampleChinese: '安排燃气开通。'
+  },
+  {
+    category: '民泊运营',
+    chinese: '恢复',
+    japanese: '復旧',
+    kana: 'ふっきゅう',
+    example: '設備の復旧には時間がかかります。',
+    exampleChinese: '设备恢复需要时间。'
+  },
+  {
+    category: '进度表达',
+    chinese: '进展',
+    japanese: '進捗',
+    kana: 'しんちょく',
+    example: '進捗を共有いたします。',
+    exampleChinese: '共享进展。'
+  },
+  {
+    category: '进度表达',
+    chinese: '大致标准；预估',
+    japanese: '目安',
+    kana: 'めやす',
+    example: '完了時期の目安を教えてください。',
+    exampleChinese: '请告诉我完成时间的大致预估。'
+  },
+  {
+    category: '进度表达',
+    chinese: '尽快；火速',
+    japanese: '早急に',
+    kana: 'そうきゅうに',
+    example: '早急に確認いたします。',
+    exampleChinese: '我会尽快确认。'
+  },
+  {
+    category: '进度表达',
+    chinese: '迅速地',
+    japanese: '速やかに',
+    kana: 'すみやかに',
+    example: '速やかに対応いたします。',
+    exampleChinese: '会迅速处理。'
+  },
+  {
+    category: '商务敬语',
+    chinese: '可以处理',
+    japanese: 'ご対応可能',
+    kana: 'ごたいおう かのう',
+    example: '本日中にご対応可能でしょうか。',
+    exampleChinese: '今天之内可以处理吗？'
+  },
+  {
+    category: '商务敬语',
+    chinese: '请您安排',
+    japanese: 'ご手配いただく',
+    kana: 'ごてはい いただく',
+    example: '必要書類をご手配いただけますでしょうか。',
+    exampleChinese: '可以请您安排必要文件吗？'
+  },
+  {
+    category: '商务敬语',
+    chinese: '请您处理',
+    japanese: 'ご対応いただく',
+    kana: 'ごたいおう いただく',
+    example: '早急にご対応いただけますと幸いです。',
+    exampleChinese: '如能尽快处理，将不胜感激。'
+  },
+  {
+    category: '商务敬语',
+    chinese: '请您告知',
+    japanese: 'ご教示いただく',
+    kana: 'ごきょうじ いただく',
+    example: '詳細をご教示いただけますでしょうか。',
+    exampleChinese: '可以请您告知详情吗？'
+  },
+  {
+    category: '商务敬语',
+    chinese: '请您确认',
+    japanese: 'ご確認いただく',
+    kana: 'ごかくにん いただく',
+    example: '内容をご確認いただけますでしょうか。',
+    exampleChinese: '可以请您确认内容吗？'
+  },
+  {
+    category: '商务敬语',
+    chinese: '我是这样理解的',
+    japanese: '〜の認識でおります',
+    kana: 'の にんしきで おります',
+    example: '弊社では以下の認識でおります。',
+    exampleChinese: '我方是如下理解的。'
+  },
+  {
+    category: '商务敬语',
+    chinese: '还请多多关照',
+    japanese: '何卒よろしくお願いいたします',
+    kana: 'なにとぞ よろしく おねがいいたします',
+    example: 'ご確認のほど、何卒よろしくお願いいたします。',
+    exampleChinese: '烦请确认，还请多多关照。'
   }
 ]
 
