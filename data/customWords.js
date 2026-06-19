@@ -542,6 +542,102 @@ const customWords = [
     kana: 'ほんらい',
     example: '本来なら今日は休みです。',
     exampleChinese: '按理说今天本来是休息日。'
+  },
+  {
+    category: '表达',
+    chinese: '面向；适合',
+    japanese: '向け',
+    kana: 'むけ',
+    example: 'これは初心者向けの教材です。',
+    exampleChinese: '这是面向初学者的教材。'
+  },
+  {
+    category: '动词',
+    chinese: '相关；涉及',
+    japanese: '関わる',
+    kana: 'かかわる',
+    example: '多くの人がこの計画に関わっています。',
+    exampleChinese: '很多人参与了这个计划。'
+  },
+  {
+    category: '动词',
+    chinese: '继续',
+    japanese: '続ける',
+    kana: 'つづける',
+    example: '毎日少しずつ勉強を続けます。',
+    exampleChinese: '每天一点点继续学习。'
+  },
+  {
+    category: '形容',
+    chinese: '复杂；麻烦',
+    japanese: 'ややこしい',
+    kana: 'ややこしい',
+    example: 'この手続きは少しややこしいです。',
+    exampleChinese: '这个手续有点复杂。'
+  },
+  {
+    category: '表达',
+    chinese: '轻松地；随意地',
+    japanese: '気軽に',
+    kana: 'きがるに',
+    example: '分からないことがあれば、気軽に聞いてください。',
+    exampleChinese: '有不懂的地方，请随时问。'
+  },
+  {
+    category: '気表达',
+    chinese: '注意到；察觉',
+    japanese: '気づく',
+    kana: 'きづく',
+    example: '間違いに気づいて、すぐ直しました。',
+    exampleChinese: '注意到错误后，马上改正了。'
+  },
+  {
+    category: '気表达',
+    chinese: '在意；感兴趣',
+    japanese: '気になる',
+    kana: 'きになる',
+    example: '新しい店が少し気になります。',
+    exampleChinese: '有点在意那家新店。'
+  },
+  {
+    category: '気表达',
+    chinese: '喜欢；中意',
+    japanese: '気に入る',
+    kana: 'きにいる',
+    example: 'このデザインがとても気に入りました。',
+    exampleChinese: '我很喜欢这个设计。'
+  },
+  {
+    category: '気表达',
+    chinese: '觉得；感觉',
+    japanese: '気がする',
+    kana: 'きがする',
+    example: '今日はいいことがありそうな気がします。',
+    exampleChinese: '感觉今天会有好事发生。'
+  },
+  {
+    category: '気表达',
+    chinese: '注意；小心',
+    japanese: '気をつける',
+    kana: 'きをつける',
+    example: '帰り道は車に気をつけてください。',
+    exampleChinese: '回去路上请注意车辆。'
+  },
+  {
+    category: '気表达',
+    chinese: '介意；放在心上',
+    japanese: '気にする',
+    kana: 'きにする',
+    example: '小さな失敗をあまり気にしないでください。',
+    exampleChinese: '不要太介意小小的失败。'
+  },
+  {
+    category: '気表达',
+    chinese: '干劲；气势',
+    japanese: '気合い',
+    kana: 'きあい',
+    example: '試験の前に気合いを入れました。',
+    exampleChinese: '考试前鼓足了干劲。'
   }
 ]
 
