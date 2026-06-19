@@ -65,38 +65,6 @@ p {
   line-height: 1.6;
 }
 
-.voice-setting {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 18px;
-  color: #7c858c;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.voice-setting select {
-  max-width: 240px;
-  min-height: 38px;
-  padding: 0 12px;
-  border: 1px solid #e3d6ca;
-  border-radius: 999px;
-  background: #fff;
-  color: #35414a;
-  font: inherit;
-}
-
-.small-button {
-  min-height: 38px;
-  padding: 0 12px;
-  border: 1px solid #e3d6ca;
-  border-radius: 999px;
-  background: #fff;
-  color: #9b6858;
-  font-size: 13px;
-  font-weight: 700;
-}
-
 .library-list {
   display: grid;
   gap: 20px;

@@ -1,7 +1,6 @@
 const REVIEW_THRESHOLD = 3
 const UNKNOWN_COUNTS_STORAGE_KEY = 'wordUnknownCounts'
 const DELETED_WORDS_STORAGE_KEY = 'deletedWordKeys'
-const VOICE_STORAGE_KEY = 'japaneseVoiceName'
 
 const state = {
   libraries: [],
@@ -17,7 +16,6 @@ const state = {
   completed: false,
   reviewMode: false,
   japaneseVoices: [],
-  selectedVoiceName: loadText(VOICE_STORAGE_KEY),
   unknownCounts: loadObject(UNKNOWN_COUNTS_STORAGE_KEY),
   deletedWordKeys: loadObject(DELETED_WORDS_STORAGE_KEY)
 }
@@ -40,9 +38,6 @@ function bindElements() {
     'review-button',
     'quiz-title',
     'quiz-subtitle',
-    'voice-setting',
-    'voice-select',
-    'refresh-voices-button',
     'quiz-panel',
     'review-panel',
     'quiz-card',
@@ -130,11 +125,6 @@ function bindEvents() {
   elements['delete-button'].addEventListener('click', deleteCurrentWord)
   elements['restart-button'].addEventListener('click', restartQuiz)
   elements['speak-button'].addEventListener('click', () => speakJapanese(state.words[state.currentIndex]?.kana))
-  elements['voice-select'].addEventListener('change', event => {
-    state.selectedVoiceName = event.target.value
-    saveText(VOICE_STORAGE_KEY, state.selectedVoiceName)
-  })
-  elements['refresh-voices-button'].addEventListener('click', refreshVoiceOptions)
   elements['review-panel'].addEventListener('click', event => {
     const button = event.target.closest('.speak-button')
 
@@ -194,7 +184,6 @@ function showHome() {
 function showQuiz() {
   elements['home-view'].classList.add('hidden')
   elements['quiz-view'].classList.remove('hidden')
-  refreshVoiceOptions()
   renderQuiz()
 }
 
@@ -350,7 +339,7 @@ function speakJapanese(text) {
 
   const utterance = new SpeechSynthesisUtterance(text)
   const voices = state.japaneseVoices.length > 0 ? state.japaneseVoices : getJapaneseVoices()
-  const japaneseVoice = voices.find(voice => voice.name === state.selectedVoiceName) || getPreferredJapaneseVoice(voices)
+  const japaneseVoice = getPreferredJapaneseVoice(voices)
 
   utterance.lang = 'ja-JP'
   utterance.rate = 0.82
@@ -365,9 +354,6 @@ function speakJapanese(text) {
 
 function setupVoices() {
   if (!window.speechSynthesis) {
-    elements['voice-select'].innerHTML = '<option>当前浏览器不支持读音</option>'
-    elements['voice-select'].disabled = true
-    elements['voice-setting'].classList.remove('hidden')
     return
   }
 
@@ -381,23 +367,6 @@ function refreshVoiceOptions() {
   }
 
   state.japaneseVoices = getJapaneseVoices()
-
-  if (state.japaneseVoices.length === 0) {
-    elements['voice-select'].innerHTML = '<option>未检测到日语声音</option>'
-    elements['voice-select'].disabled = true
-    elements['voice-setting'].classList.remove('hidden')
-    return
-  }
-
-  const selectedVoice = state.japaneseVoices.find(voice => voice.name === state.selectedVoiceName) || getPreferredJapaneseVoice(state.japaneseVoices)
-  state.selectedVoiceName = selectedVoice?.name || ''
-
-  elements['voice-select'].innerHTML = state.japaneseVoices
-    .map(voice => `<option value="${escapeAttribute(voice.name)}">${escapeHtml(getVoiceLabel(voice))}</option>`)
-    .join('')
-  elements['voice-select'].value = state.selectedVoiceName
-  elements['voice-select'].disabled = false
-  elements['voice-setting'].classList.remove('hidden')
 }
 
 function getJapaneseVoices() {
@@ -414,10 +383,6 @@ function getPreferredJapaneseVoice(voices) {
     .find(Boolean) || voices[0]
 }
 
-function getVoiceLabel(voice) {
-  return `${voice.name}（${voice.lang}）`
-}
-
 function formatAccent(accent) {
   return `[${accent}]`
 }
@@ -426,13 +391,6 @@ function escapeAttribute(value) {
   return String(value)
     .replace(/&/g, '&amp;')
     .replace(/"/g, '&quot;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-}
-
-function escapeHtml(value) {
-  return String(value)
-    .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
 }
@@ -509,16 +467,4 @@ function loadObject(key) {
 
 function saveObject(key, value) {
   localStorage.setItem(key, JSON.stringify(value))
-}
-
-function loadText(key) {
-  try {
-    return localStorage.getItem(key) || ''
-  } catch (error) {
-    return ''
-  }
-}
-
-function saveText(key, value) {
-  localStorage.setItem(key, value)
 }
