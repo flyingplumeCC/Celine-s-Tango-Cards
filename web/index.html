@@ -29,6 +29,7 @@
           <label id="voice-setting" class="voice-setting hidden">
             <span>日语声音</span>
             <select id="voice-select"></select>
+            <button id="refresh-voices-button" class="small-button" type="button">刷新</button>
           </label>
         </header>
 
@@ -48,6 +49,7 @@
               <div class="answer-main">
                 <div class="pronunciation-row">
                   <strong id="japanese-word" class="japanese"></strong>
+                  <span id="accent-mark" class="accent-mark hidden"></span>
                   <button id="speak-button" class="speak-button" type="button" aria-label="播放读音">读音</button>
                 </div>
                 <span id="kana-word" class="kana"></span>

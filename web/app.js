@@ -42,6 +42,7 @@ function bindElements() {
     'quiz-subtitle',
     'voice-setting',
     'voice-select',
+    'refresh-voices-button',
     'quiz-panel',
     'review-panel',
     'quiz-card',
@@ -51,6 +52,7 @@ function bindElements() {
     'answer-box',
     'answer-placeholder',
     'japanese-word',
+    'accent-mark',
     'speak-button',
     'kana-word',
     'example-japanese',
@@ -132,6 +134,7 @@ function bindEvents() {
     state.selectedVoiceName = event.target.value
     saveText(VOICE_STORAGE_KEY, state.selectedVoiceName)
   })
+  elements['refresh-voices-button'].addEventListener('click', refreshVoiceOptions)
   elements['review-panel'].addEventListener('click', event => {
     const button = event.target.closest('.speak-button')
 
@@ -276,6 +279,8 @@ function renderQuiz() {
   elements['question-number'].textContent = `第 ${state.questionNumber} 题`
   elements['chinese-word'].textContent = word.chinese
   elements['japanese-word'].textContent = word.japanese
+  elements['accent-mark'].textContent = formatAccent(word.accent)
+  elements['accent-mark'].classList.toggle('hidden', !word.accent)
   elements['kana-word'].textContent = word.kana
   elements['example-japanese'].textContent = word.example
   elements['example-chinese'].textContent = word.exampleChinese
@@ -304,6 +309,7 @@ function renderReview(reviewWords) {
         <strong class="review-chinese">${word.chinese}</strong>
         <div class="review-pronunciation-row">
           <span class="review-japanese">${word.japanese}</span>
+          ${word.accent ? `<span class="accent-mark">${formatAccent(word.accent)}</span>` : ''}
           <button class="speak-button" type="button" data-text="${escapeAttribute(word.kana)}" aria-label="播放${escapeAttribute(word.japanese)}的读音">读音</button>
         </div>
         <span class="review-kana">${word.kana}</span>
@@ -359,7 +365,9 @@ function speakJapanese(text) {
 
 function setupVoices() {
   if (!window.speechSynthesis) {
-    elements['voice-setting'].classList.add('hidden')
+    elements['voice-select'].innerHTML = '<option>当前浏览器不支持读音</option>'
+    elements['voice-select'].disabled = true
+    elements['voice-setting'].classList.remove('hidden')
     return
   }
 
@@ -375,7 +383,9 @@ function refreshVoiceOptions() {
   state.japaneseVoices = getJapaneseVoices()
 
   if (state.japaneseVoices.length === 0) {
-    elements['voice-setting'].classList.add('hidden')
+    elements['voice-select'].innerHTML = '<option>未检测到日语声音</option>'
+    elements['voice-select'].disabled = true
+    elements['voice-setting'].classList.remove('hidden')
     return
   }
 
@@ -386,6 +396,7 @@ function refreshVoiceOptions() {
     .map(voice => `<option value="${escapeAttribute(voice.name)}">${escapeHtml(getVoiceLabel(voice))}</option>`)
     .join('')
   elements['voice-select'].value = state.selectedVoiceName
+  elements['voice-select'].disabled = false
   elements['voice-setting'].classList.remove('hidden')
 }
 
@@ -405,6 +416,10 @@ function getPreferredJapaneseVoice(voices) {
 
 function getVoiceLabel(voice) {
   return `${voice.name}（${voice.lang}）`
+}
+
+function formatAccent(accent) {
+  return `[${accent}]`
 }
 
 function escapeAttribute(value) {

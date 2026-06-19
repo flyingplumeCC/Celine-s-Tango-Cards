@@ -13,7 +13,8 @@ const businessWords = [
     japanese: '社長',
     kana: 'しゃちょう',
     example: '社長に報告しました。',
-    exampleChinese: '已经向社长汇报了。'
+    exampleChinese: '已经向社长汇报了。',
+    accent: '0'
   },
   {
     category: '职位',
@@ -21,7 +22,8 @@ const businessWords = [
     japanese: '部長',
     kana: 'ぶちょう',
     example: '部長の承認が必要です。',
-    exampleChinese: '需要部长批准。'
+    exampleChinese: '需要部长批准。',
+    accent: '0'
   },
   {
     category: '职位',
@@ -29,7 +31,8 @@ const businessWords = [
     japanese: '課長',
     kana: 'かちょう',
     example: '課長に相談してください。',
-    exampleChinese: '请和课长商量。'
+    exampleChinese: '请和课长商量。',
+    accent: '0'
   },
   {
     category: '职位',
@@ -37,7 +40,8 @@ const businessWords = [
     japanese: '社員',
     kana: 'しゃいん',
     example: '社員は百人います。',
-    exampleChinese: '公司有一百名员工。'
+    exampleChinese: '公司有一百名员工。',
+    accent: '1'
   },
   {
     category: '商务往来',
@@ -45,7 +49,8 @@ const businessWords = [
     japanese: '顧客',
     kana: 'こきゃく',
     example: '顧客の要望を確認します。',
-    exampleChinese: '确认客户的需求。'
+    exampleChinese: '确认客户的需求。',
+    accent: '0'
   },
   {
     category: '商务往来',
@@ -53,7 +58,8 @@ const businessWords = [
     japanese: '取引先',
     kana: 'とりひきさき',
     example: '取引先を訪問します。',
-    exampleChinese: '拜访合作方。'
+    exampleChinese: '拜访合作方。',
+    accent: '0'
   },
   {
     category: '商务往来',
@@ -69,7 +75,8 @@ const businessWords = [
     japanese: '会議',
     kana: 'かいぎ',
     example: '午後三時から会議があります。',
-    exampleChinese: '下午三点开始有会议。'
+    exampleChinese: '下午三点开始有会议。',
+    accent: '1'
   },
   {
     category: '会议',
@@ -77,7 +84,8 @@ const businessWords = [
     japanese: '議題',
     kana: 'ぎだい',
     example: '今日の議題を確認しましょう。',
-    exampleChinese: '确认一下今天的议题吧。'
+    exampleChinese: '确认一下今天的议题吧。',
+    accent: '0'
   },
   {
     category: '会议',
@@ -85,7 +93,8 @@ const businessWords = [
     japanese: '資料',
     kana: 'しりょう',
     example: '会議の資料を準備します。',
-    exampleChinese: '准备会议资料。'
+    exampleChinese: '准备会议资料。',
+    accent: '1'
   },
   {
     category: '会议',
@@ -117,7 +126,8 @@ const businessWords = [
     japanese: '契約書',
     kana: 'けいやくしょ',
     example: '契約書に署名します。',
-    exampleChinese: '在合同上签字。'
+    exampleChinese: '在合同上签字。',
+    accent: '0'
   },
   {
     category: '交易',
@@ -125,7 +135,8 @@ const businessWords = [
     japanese: '発注',
     kana: 'はっちゅう',
     example: '商品を百個発注しました。',
-    exampleChinese: '下单了一百件商品。'
+    exampleChinese: '下单了一百件商品。',
+    accent: '0'
   },
   {
     category: '交易',
@@ -133,7 +144,8 @@ const businessWords = [
     japanese: '受注',
     kana: 'じゅちゅう',
     example: '大きな案件を受注しました。',
-    exampleChinese: '接到了一个大项目。'
+    exampleChinese: '接到了一个大项目。',
+    accent: '0'
   },
   {
     category: '财务',
@@ -141,7 +153,8 @@ const businessWords = [
     japanese: '売上',
     kana: 'うりあげ',
     example: '今月の売上を確認します。',
-    exampleChinese: '确认本月流水。'
+    exampleChinese: '确认本月流水。',
+    accent: '0'
   },
   {
     category: '财务',
@@ -149,7 +162,8 @@ const businessWords = [
     japanese: '入金',
     kana: 'にゅうきん',
     example: '入金を確認しました。',
-    exampleChinese: '已经确认入金。'
+    exampleChinese: '已经确认入金。',
+    accent: '0'
   },
   {
     category: '财务',
@@ -157,7 +171,8 @@ const businessWords = [
     japanese: '送金',
     kana: 'そうきん',
     example: '今日中に送金します。',
-    exampleChinese: '今天之内汇款。'
+    exampleChinese: '今天之内汇款。',
+    accent: '0'
   },
   {
     category: '财务',
@@ -165,7 +180,8 @@ const businessWords = [
     japanese: '支払い',
     kana: 'しはらい',
     example: '支払い期限は月末です。',
-    exampleChinese: '付款期限是月底。'
+    exampleChinese: '付款期限是月底。',
+    accent: '0'
   },
   {
     category: '财务',
@@ -173,7 +189,8 @@ const businessWords = [
     japanese: '経費',
     kana: 'けいひ',
     example: '出張の経費を精算します。',
-    exampleChinese: '报销出差经费。'
+    exampleChinese: '报销出差经费。',
+    accent: '1'
   },
   {
     category: '财务',
@@ -181,7 +198,8 @@ const businessWords = [
     japanese: '予算',
     kana: 'よさん',
     example: '来年度の予算を作成します。',
-    exampleChinese: '编制下一年度的预算。'
+    exampleChinese: '编制下一年度的预算。',
+    accent: '0'
   },
   {
     category: '财务',
@@ -189,7 +207,8 @@ const businessWords = [
     japanese: '利益',
     kana: 'りえき',
     example: '利益が増えました。',
-    exampleChinese: '利润增加了。'
+    exampleChinese: '利润增加了。',
+    accent: '1'
   },
   {
     category: '财务',
@@ -197,7 +216,8 @@ const businessWords = [
     japanese: '損失',
     kana: 'そんしつ',
     example: '損失を最小限に抑えます。',
-    exampleChinese: '将亏损控制在最低限度。'
+    exampleChinese: '将亏损控制在最低限度。',
+    accent: '0'
   },
   {
     category: '商品管理',
@@ -205,7 +225,8 @@ const businessWords = [
     japanese: '納品',
     kana: 'のうひん',
     example: '商品を明日納品します。',
-    exampleChinese: '明天交货。'
+    exampleChinese: '明天交货。',
+    accent: '0'
   },
   {
     category: '商品管理',
@@ -213,7 +234,8 @@ const businessWords = [
     japanese: '納期',
     kana: 'のうき',
     example: '納期を一週間延ばしてください。',
-    exampleChinese: '请把交货期延长一周。'
+    exampleChinese: '请把交货期延长一周。',
+    accent: '1'
   },
   {
     category: '商品管理',
@@ -221,7 +243,8 @@ const businessWords = [
     japanese: '在庫',
     kana: 'ざいこ',
     example: '在庫を確認してください。',
-    exampleChinese: '请确认库存。'
+    exampleChinese: '请确认库存。',
+    accent: '0'
   },
   {
     category: '商品管理',
@@ -229,7 +252,8 @@ const businessWords = [
     japanese: '商品',
     kana: 'しょうひん',
     example: '新商品を紹介します。',
-    exampleChinese: '介绍新商品。'
+    exampleChinese: '介绍新商品。',
+    accent: '1'
   },
   {
     category: '办公',
@@ -237,7 +261,8 @@ const businessWords = [
     japanese: '出張',
     kana: 'しゅっちょう',
     example: '来週、大阪へ出張します。',
-    exampleChinese: '下周去大阪出差。'
+    exampleChinese: '下周去大阪出差。',
+    accent: '0'
   },
   {
     category: '办公',
@@ -253,7 +278,8 @@ const businessWords = [
     japanese: '締め切り',
     kana: 'しめきり',
     example: '締め切りは今週の金曜日です。',
-    exampleChinese: '截止日期是本周五。'
+    exampleChinese: '截止日期是本周五。',
+    accent: '0'
   },
   {
     category: '办公',
@@ -261,7 +287,8 @@ const businessWords = [
     japanese: '承認',
     kana: 'しょうにん',
     example: '上司の承認を得ました。',
-    exampleChinese: '获得了上司批准。'
+    exampleChinese: '获得了上司批准。',
+    accent: '0'
   },
   {
     category: '办公',
@@ -269,7 +296,8 @@ const businessWords = [
     japanese: '報告',
     kana: 'ほうこく',
     example: '進捗を報告します。',
-    exampleChinese: '汇报进展。'
+    exampleChinese: '汇报进展。',
+    accent: '0'
   },
   {
     category: '办公',
@@ -277,7 +305,8 @@ const businessWords = [
     japanese: '相談',
     kana: 'そうだん',
     example: 'この件について相談したいです。',
-    exampleChinese: '想商量一下这件事。'
+    exampleChinese: '想商量一下这件事。',
+    accent: '0'
   },
   {
     category: '办公',
@@ -285,7 +314,8 @@ const businessWords = [
     japanese: '確認',
     kana: 'かくにん',
     example: '内容をもう一度確認します。',
-    exampleChinese: '再次确认内容。'
+    exampleChinese: '再次确认内容。',
+    accent: '0'
   },
   {
     category: '联络',
@@ -301,7 +331,8 @@ const businessWords = [
     japanese: '電話',
     kana: 'でんわ',
     example: '後ほど電話をかけます。',
-    exampleChinese: '稍后打电话。'
+    exampleChinese: '稍后打电话。',
+    accent: '0'
   },
   {
     category: '商务往来',
@@ -309,7 +340,8 @@ const businessWords = [
     japanese: '名刺',
     kana: 'めいし',
     example: '名刺を交換しましょう。',
-    exampleChinese: '交换名片吧。'
+    exampleChinese: '交换名片吧。',
+    accent: '0'
   },
   {
     category: '办公',
@@ -317,7 +349,8 @@ const businessWords = [
     japanese: '受付',
     kana: 'うけつけ',
     example: '受付でお名前をお伝えください。',
-    exampleChinese: '请在接待处告知姓名。'
+    exampleChinese: '请在接待处告知姓名。',
+    accent: '0'
   },
   {
     category: '商务敬语',
@@ -405,7 +438,8 @@ const businessWords = [
     japanese: '会計',
     kana: 'かいけい',
     example: '会計処理を確認します。',
-    exampleChinese: '确认会计处理。'
+    exampleChinese: '确认会计处理。',
+    accent: '0'
   },
   {
     category: '财务税务',
@@ -413,7 +447,8 @@ const businessWords = [
     japanese: '決算',
     kana: 'けっさん',
     example: '年度末の決算を行います。',
-    exampleChinese: '进行年末决算。'
+    exampleChinese: '进行年末决算。',
+    accent: '1'
   },
   {
     category: '财务税务',
@@ -501,7 +536,8 @@ const businessWords = [
     japanese: '輸入',
     kana: 'ゆにゅう',
     example: '海外から原材料を輸入します。',
-    exampleChinese: '从海外进口原材料。'
+    exampleChinese: '从海外进口原材料。',
+    accent: '0'
   },
   {
     category: '跨境贸易',
@@ -509,7 +545,8 @@ const businessWords = [
     japanese: '輸出',
     kana: 'ゆしゅつ',
     example: '日本の商品を海外へ輸出します。',
-    exampleChinese: '将日本商品出口到海外。'
+    exampleChinese: '将日本商品出口到海外。',
+    accent: '0'
   },
   {
     category: '跨境贸易',
@@ -517,7 +554,8 @@ const businessWords = [
     japanese: '通関',
     kana: 'つうかん',
     example: '貨物の通関手続きを行います。',
-    exampleChinese: '办理货物报关手续。'
+    exampleChinese: '办理货物报关手续。',
+    accent: '0'
   },
   {
     category: '跨境贸易',
@@ -525,7 +563,8 @@ const businessWords = [
     japanese: '関税',
     kana: 'かんぜい',
     example: '輸入品には関税がかかります。',
-    exampleChinese: '进口商品需要缴纳关税。'
+    exampleChinese: '进口商品需要缴纳关税。',
+    accent: '0'
   },
   {
     category: '跨境贸易',
@@ -557,7 +596,8 @@ const businessWords = [
     japanese: '貨物',
     kana: 'かもつ',
     example: '貨物は明日港に到着します。',
-    exampleChinese: '货物明天抵达港口。'
+    exampleChinese: '货物明天抵达港口。',
+    accent: '1'
   },
   {
     category: '跨境贸易',
@@ -597,7 +637,8 @@ const businessWords = [
     japanese: '委託',
     kana: 'いたく',
     example: '業務の一部を外部に委託します。',
-    exampleChinese: '将部分业务委托给外部公司。'
+    exampleChinese: '将部分业务委托给外部公司。',
+    accent: '0'
   },
   {
     category: '合同委托',
@@ -605,7 +646,8 @@ const businessWords = [
     japanese: '受託',
     kana: 'じゅたく',
     example: 'システム開発を受託しました。',
-    exampleChinese: '承接了系统开发委托。'
+    exampleChinese: '承接了系统开发委托。',
+    accent: '0'
   },
   {
     category: '合同委托',
@@ -701,7 +743,8 @@ const businessWords = [
     japanese: '誤解',
     kana: 'ごかい',
     example: '誤解を招く表現を修正します。',
-    exampleChinese: '修改容易引起误解的表达。'
+    exampleChinese: '修改容易引起误解的表达。',
+    accent: '0'
   },
   {
     category: '商务沟通',
@@ -709,7 +752,8 @@ const businessWords = [
     japanese: '混乱',
     kana: 'こんらん',
     example: '現場で混乱が生じています。',
-    exampleChinese: '现场出现了混乱。'
+    exampleChinese: '现场出现了混乱。',
+    accent: '0'
   },
   {
     category: '商务沟通',
@@ -717,7 +761,8 @@ const businessWords = [
     japanese: '手数',
     kana: 'てすう',
     example: 'お手数をおかけして申し訳ございません。',
-    exampleChinese: '给您添麻烦，非常抱歉。'
+    exampleChinese: '给您添麻烦，非常抱歉。',
+    accent: '1'
   },
   {
     category: '费用',
@@ -725,7 +770,8 @@ const businessWords = [
     japanese: '一式',
     kana: 'いっしき',
     example: '必要書類一式を送付します。',
-    exampleChinese: '发送全套必要文件。'
+    exampleChinese: '发送全套必要文件。',
+    accent: '0'
   },
   {
     category: '费用',
@@ -733,7 +779,8 @@ const businessWords = [
     japanese: '料金',
     kana: 'りょうきん',
     example: '追加料金が発生します。',
-    exampleChinese: '会产生追加费用。'
+    exampleChinese: '会产生追加费用。',
+    accent: '1'
   },
   {
     category: '费用',
@@ -741,7 +788,8 @@ const businessWords = [
     japanese: '費用',
     kana: 'ひよう',
     example: '費用の目安を教えてください。',
-    exampleChinese: '请告诉我费用的大致标准。'
+    exampleChinese: '请告诉我费用的大致标准。',
+    accent: '1'
   },
   {
     category: '费用',
@@ -757,7 +805,8 @@ const businessWords = [
     japanese: '検討',
     kana: 'けんとう',
     example: '社内で検討いたします。',
-    exampleChinese: '我们会在公司内部讨论。'
+    exampleChinese: '我们会在公司内部讨论。',
+    accent: '0'
   },
   {
     category: '民泊运营',
@@ -765,7 +814,8 @@ const businessWords = [
     japanese: '民泊',
     kana: 'みんぱく',
     example: '民泊の運営を開始します。',
-    exampleChinese: '开始运营民宿。'
+    exampleChinese: '开始运营民宿。',
+    accent: '0'
   },
   {
     category: '民泊运营',
@@ -773,7 +823,8 @@ const businessWords = [
     japanese: '運営',
     kana: 'うんえい',
     example: '施設の運営体制を確認します。',
-    exampleChinese: '确认设施的运营体制。'
+    exampleChinese: '确认设施的运营体制。',
+    accent: '0'
   },
   {
     category: '民泊运营',
@@ -845,7 +896,8 @@ const businessWords = [
     japanese: '設置',
     kana: 'せっち',
     example: '防犯カメラを設置します。',
-    exampleChinese: '安装监控摄像头。'
+    exampleChinese: '安装监控摄像头。',
+    accent: '0'
   },
   {
     category: '许可手续',
@@ -885,7 +937,8 @@ const businessWords = [
     japanese: '発行',
     kana: 'はっこう',
     example: '許可証が発行されました。',
-    exampleChinese: '许可证已经签发。'
+    exampleChinese: '许可证已经签发。',
+    accent: '0'
   },
   {
     category: '许可手续',
@@ -925,7 +978,8 @@ const businessWords = [
     japanese: '復旧',
     kana: 'ふっきゅう',
     example: '設備の復旧には時間がかかります。',
-    exampleChinese: '设备恢复需要时间。'
+    exampleChinese: '设备恢复需要时间。',
+    accent: '0'
   },
   {
     category: '进度表达',
@@ -933,7 +987,8 @@ const businessWords = [
     japanese: '進捗',
     kana: 'しんちょく',
     example: '進捗を共有いたします。',
-    exampleChinese: '共享进展。'
+    exampleChinese: '共享进展。',
+    accent: '0'
   },
   {
     category: '进度表达',
@@ -941,7 +996,8 @@ const businessWords = [
     japanese: '目安',
     kana: 'めやす',
     example: '完了時期の目安を教えてください。',
-    exampleChinese: '请告诉我完成时间的大致预估。'
+    exampleChinese: '请告诉我完成时间的大致预估。',
+    accent: '0'
   },
   {
     category: '进度表达',

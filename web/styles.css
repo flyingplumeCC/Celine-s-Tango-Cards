@@ -76,7 +76,7 @@ p {
 }
 
 .voice-setting select {
-  max-width: 260px;
+  max-width: 240px;
   min-height: 38px;
   padding: 0 12px;
   border: 1px solid #e3d6ca;
@@ -84,6 +84,17 @@ p {
   background: #fff;
   color: #35414a;
   font: inherit;
+}
+
+.small-button {
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid #e3d6ca;
+  border-radius: 999px;
+  background: #fff;
+  color: #9b6858;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .library-list {
@@ -273,6 +284,20 @@ p {
 .review-kana {
   margin-top: 8px;
   color: #68747d;
+}
+
+.accent-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: #f8e8e3;
+  color: #b64d3a;
+  font-size: 15px;
+  font-weight: 800;
 }
 
 .speak-button {

@@ -21,7 +21,8 @@ const words = [
     japanese: '遅延',
     kana: 'ちえん',
     example: '悪天候で飛行機が遅延しています。',
-    exampleChinese: '飞机因天气恶劣而延误。'
+    exampleChinese: '飞机因天气恶劣而延误。',
+    accent: '0'
   },
   {
     category: '航班',
@@ -29,7 +30,8 @@ const words = [
     japanese: '欠航',
     kana: 'けっこう',
     example: '今日の便は欠航になりました。',
-    exampleChinese: '今天的航班取消了。'
+    exampleChinese: '今天的航班取消了。',
+    accent: '0'
   },
   {
     category: '日常会话',
@@ -85,7 +87,8 @@ const words = [
     japanese: '税関',
     kana: 'ぜいかん',
     example: '税関で荷物を確認されました。',
-    exampleChinese: '行李在海关接受了检查。'
+    exampleChinese: '行李在海关接受了检查。',
+    accent: '0'
   },
   {
     category: '机场',
@@ -117,7 +120,8 @@ const words = [
     japanese: '乗り継ぎ',
     kana: 'のりつぎ',
     example: 'ソウルで乗り継ぎがあります。',
-    exampleChinese: '需要在首尔转机。'
+    exampleChinese: '需要在首尔转机。',
+    accent: '0'
   },
   {
     category: '航班',
@@ -293,7 +297,8 @@ const words = [
     japanese: '乗り換え',
     kana: 'のりかえ',
     example: '新宿駅で乗り換えてください。',
-    exampleChinese: '请在新宿站换乘。'
+    exampleChinese: '请在新宿站换乘。',
+    accent: '0'
   },
   {
     category: '观光',
@@ -309,7 +314,8 @@ const words = [
     japanese: 'アレルギー',
     kana: 'あれるぎー',
     example: '私はえびのアレルギーがあります。',
-    exampleChinese: '我对虾过敏。'
+    exampleChinese: '我对虾过敏。',
+    accent: '2'
   },
   {
     category: '餐饮',
@@ -325,7 +331,8 @@ const words = [
     japanese: '指定席',
     kana: 'していせき',
     example: '指定席を予約したいです。',
-    exampleChinese: '我想预约指定席。'
+    exampleChinese: '我想预约指定席。',
+    accent: '2'
   },
   {
     category: '铁路交通',
@@ -333,7 +340,8 @@ const words = [
     japanese: '自由席',
     kana: 'じゆうせき',
     example: '自由席は何号車ですか。',
-    exampleChinese: '自由席在几号车厢？'
+    exampleChinese: '自由席在几号车厢？',
+    accent: '2'
   },
   {
     category: '铁路交通',
@@ -341,7 +349,8 @@ const words = [
     japanese: '終電',
     kana: 'しゅうでん',
     example: '終電は何時ですか。',
-    exampleChinese: '末班车是几点？'
+    exampleChinese: '末班车是几点？',
+    accent: '0'
   },
   {
     category: '购物',
@@ -357,7 +366,8 @@ const words = [
     japanese: '試着',
     kana: 'しちゃく',
     example: 'これを試着してもいいですか。',
-    exampleChinese: '可以试穿这个吗？'
+    exampleChinese: '可以试穿这个吗？',
+    accent: '0'
   },
   {
     category: '购物',
@@ -365,7 +375,8 @@ const words = [
     japanese: '返品',
     kana: 'へんぴん',
     example: 'この商品を返品したいです。',
-    exampleChinese: '我想退掉这件商品。'
+    exampleChinese: '我想退掉这件商品。',
+    accent: '0'
   },
   {
     category: '旅行应急',
@@ -373,7 +384,8 @@ const words = [
     japanese: '忘れ物',
     kana: 'わすれもの',
     example: '電車に忘れ物をしました。',
-    exampleChinese: '我把东西落在电车上了。'
+    exampleChinese: '我把东西落在电车上了。',
+    accent: '0'
   },
   {
     category: '旅行应急',
@@ -485,7 +497,8 @@ const words = [
     japanese: '運休',
     kana: 'うんきゅう',
     example: '台風の影響で電車が運休しています。',
-    exampleChinese: '受台风影响，电车临时停运。'
+    exampleChinese: '受台风影响，电车临时停运。',
+    accent: '0'
   },
   {
     category: '交通',
@@ -493,7 +506,8 @@ const words = [
     japanese: '迂回',
     kana: 'うかい',
     example: '事故のため、迂回してください。',
-    exampleChinese: '因事故，请绕行。'
+    exampleChinese: '因事故，请绕行。',
+    accent: '0'
   },
   {
     category: '交通',
@@ -501,7 +515,8 @@ const words = [
     japanese: '片道',
     kana: 'かたみち',
     example: '大阪まで片道でお願いします。',
-    exampleChinese: '请给我到大阪的单程票。'
+    exampleChinese: '请给我到大阪的单程票。',
+    accent: '0'
   },
   {
     category: '交通',
@@ -509,7 +524,8 @@ const words = [
     japanese: '往復',
     kana: 'おうふく',
     example: '往復切符を買いました。',
-    exampleChinese: '买了往返票。'
+    exampleChinese: '买了往返票。',
+    accent: '0'
   },
   {
     category: '交通',
@@ -517,7 +533,8 @@ const words = [
     japanese: '改札口',
     kana: 'かいさつぐち',
     example: '中央改札口で待ち合わせましょう。',
-    exampleChinese: '在中央检票口碰头吧。'
+    exampleChinese: '在中央检票口碰头吧。',
+    accent: '0'
   },
   {
     category: '交通',
@@ -525,7 +542,8 @@ const words = [
     japanese: '時刻表',
     kana: 'じこくひょう',
     example: '時刻表で終電を確認します。',
-    exampleChinese: '用时刻表确认末班车。'
+    exampleChinese: '用时刻表确认末班车。',
+    accent: '0'
   },
   {
     category: '餐饮',
@@ -565,7 +583,8 @@ const words = [
     japanese: '品切れ',
     kana: 'しなぎれ',
     example: 'このサイズは品切れですか。',
-    exampleChinese: '这个尺码缺货了吗？'
+    exampleChinese: '这个尺码缺货了吗？',
+    accent: '0'
   },
   {
     category: '购物',
@@ -581,7 +600,8 @@ const words = [
     japanese: '不良品',
     kana: 'ふりょうひん',
     example: 'これは不良品かもしれません。',
-    exampleChinese: '这个可能是瑕疵品。'
+    exampleChinese: '这个可能是瑕疵品。',
+    accent: '0'
   },
   {
     category: '观光',
@@ -589,7 +609,8 @@ const words = [
     japanese: '予約制',
     kana: 'よやくせい',
     example: 'この施設は予約制です。',
-    exampleChinese: '这个设施是预约制。'
+    exampleChinese: '这个设施是预约制。',
+    accent: '0'
   },
   {
     category: '观光',
@@ -621,7 +642,8 @@ const words = [
     japanese: '盗まれる',
     kana: 'ぬすまれる',
     example: '財布を盗まれました。',
-    exampleChinese: '钱包被偷了。'
+    exampleChinese: '钱包被偷了。',
+    accent: '0'
   }
 ]
 

@@ -5,7 +5,8 @@ const customWords = [
     japanese: '広報',
     kana: 'こうほう',
     example: '会社の広報を担当しています。',
-    exampleChinese: '我负责公司的宣传。'
+    exampleChinese: '我负责公司的宣传。',
+    accent: '0'
   },
   {
     category: '动词',
@@ -13,7 +14,8 @@ const customWords = [
     japanese: '果たす',
     kana: 'はたす',
     example: '彼は大切な役割を果たしました。',
-    exampleChinese: '他完成了重要的职责。'
+    exampleChinese: '他完成了重要的职责。',
+    accent: '2'
   },
   {
     category: '动词',
@@ -21,7 +23,8 @@ const customWords = [
     japanese: '拒否',
     kana: 'きょひ',
     example: '彼はその提案を拒否しました。',
-    exampleChinese: '他拒绝了那个提案。'
+    exampleChinese: '他拒绝了那个提案。',
+    accent: '1'
   },
   {
     category: '社会',
@@ -29,7 +32,8 @@ const customWords = [
     japanese: '背景',
     kana: 'はいけい',
     example: '問題の背景を詳しく説明します。',
-    exampleChinese: '详细说明问题的背景。'
+    exampleChinese: '详细说明问题的背景。',
+    accent: '0'
   },
   {
     category: '身体',
@@ -37,7 +41,8 @@ const customWords = [
     japanese: '心身',
     kana: 'しんしん',
     example: '心身の健康を大切にしています。',
-    exampleChinese: '重视身心健康。'
+    exampleChinese: '重视身心健康。',
+    accent: '1'
   },
   {
     category: '生活',
@@ -109,7 +114,8 @@ const customWords = [
     japanese: '熟成',
     kana: 'じゅくせい',
     example: 'このチーズは半年間熟成されています。',
-    exampleChinese: '这种奶酪熟成了半年。'
+    exampleChinese: '这种奶酪熟成了半年。',
+    accent: '0'
   },
   {
     category: '葡萄酒',
@@ -189,7 +195,8 @@ const customWords = [
     japanese: '物価',
     kana: 'ぶっか',
     example: '最近、物価が上がっています。',
-    exampleChinese: '最近物价在上涨。'
+    exampleChinese: '最近物价在上涨。',
+    accent: '0'
   },
   {
     category: '动词',
@@ -197,7 +204,8 @@ const customWords = [
     japanese: '発揮',
     kana: 'はっき',
     example: '彼は会議で能力を発揮しました。',
-    exampleChinese: '他在会议中发挥了能力。'
+    exampleChinese: '他在会议中发挥了能力。',
+    accent: '0'
   },
   {
     category: '生活',
@@ -205,7 +213,8 @@ const customWords = [
     japanese: '入力',
     kana: 'にゅうりょく',
     example: '名前と住所を入力してください。',
-    exampleChinese: '请输入姓名和地址。'
+    exampleChinese: '请输入姓名和地址。',
+    accent: '0'
   },
   {
     category: '社会',
@@ -229,7 +238,8 @@ const customWords = [
     japanese: '相談',
     kana: 'そうだん',
     example: '困った時は先生に相談します。',
-    exampleChinese: '遇到困难时向老师咨询。'
+    exampleChinese: '遇到困难时向老师咨询。',
+    accent: '0'
   },
   {
     category: '手续',
@@ -261,7 +271,8 @@ const customWords = [
     japanese: '宅配',
     kana: 'たくはい',
     example: '宅配で荷物を受け取りました。',
-    exampleChinese: '通过送货上门收到了包裹。'
+    exampleChinese: '通过送货上门收到了包裹。',
+    accent: '0'
   },
   {
     category: '生活',
@@ -269,7 +280,8 @@ const customWords = [
     japanese: '郵便',
     kana: 'ゆうびん',
     example: '郵便で書類を送りました。',
-    exampleChinese: '通过邮寄发送了文件。'
+    exampleChinese: '通过邮寄发送了文件。',
+    accent: '0'
   },
   {
     category: '办公',
@@ -277,7 +289,8 @@ const customWords = [
     japanese: '備品',
     kana: 'びひん',
     example: '会議室の備品を確認します。',
-    exampleChinese: '确认会议室的备品。'
+    exampleChinese: '确认会议室的备品。',
+    accent: '0'
   },
   {
     category: '生活',
@@ -285,7 +298,8 @@ const customWords = [
     japanese: '施設',
     kana: 'しせつ',
     example: 'この施設は誰でも利用できます。',
-    exampleChinese: '这个设施任何人都可以使用。'
+    exampleChinese: '这个设施任何人都可以使用。',
+    accent: '1'
   },
   {
     category: '手续',
@@ -293,7 +307,8 @@ const customWords = [
     japanese: '申請',
     kana: 'しんせい',
     example: 'ビザの申請をしました。',
-    exampleChinese: '申请了签证。'
+    exampleChinese: '申请了签证。',
+    accent: '0'
   },
   {
     category: '手续',
@@ -309,7 +324,8 @@ const customWords = [
     japanese: '視野',
     kana: 'しや',
     example: '海外経験で視野が広がりました。',
-    exampleChinese: '海外经历开阔了视野。'
+    exampleChinese: '海外经历开阔了视野。',
+    accent: '1'
   },
   {
     category: '身体',
@@ -317,7 +333,8 @@ const customWords = [
     japanese: '疲労',
     kana: 'ひろう',
     example: '長時間の作業で疲労がたまりました。',
-    exampleChinese: '长时间工作积累了疲劳。'
+    exampleChinese: '长时间工作积累了疲劳。',
+    accent: '0'
   },
   {
     category: '工作',
@@ -325,7 +342,8 @@ const customWords = [
     japanese: '工賃',
     kana: 'こうちん',
     example: '修理の工賃はいくらですか。',
-    exampleChinese: '维修工钱是多少？'
+    exampleChinese: '维修工钱是多少？',
+    accent: '0'
   },
   {
     category: '工作',
@@ -333,7 +351,8 @@ const customWords = [
     japanese: '作業所',
     kana: 'さぎょうしょ',
     example: '作業所で備品を管理しています。',
-    exampleChinese: '在作业所管理备品。'
+    exampleChinese: '在作业所管理备品。',
+    accent: '0'
   },
   {
     category: '表达',
@@ -341,7 +360,8 @@ const customWords = [
     japanese: 'なんとか',
     kana: 'なんとか',
     example: '締め切りまでになんとか終わらせます。',
-    exampleChinese: '我会想办法在截止日期前完成。'
+    exampleChinese: '我会想办法在截止日期前完成。',
+    accent: '1'
   },
   {
     category: '表达',
@@ -349,7 +369,8 @@ const customWords = [
     japanese: 'きっかけ',
     kana: 'きっかけ',
     example: '旅行が日本語を始めるきっかけでした。',
-    exampleChinese: '旅行是我开始学日语的契机。'
+    exampleChinese: '旅行是我开始学日语的契机。',
+    accent: '0'
   },
   {
     category: '表达',
@@ -357,7 +378,8 @@ const customWords = [
     japanese: 'いずれ',
     kana: 'いずれ',
     example: 'いずれ日本で働きたいです。',
-    exampleChinese: '早晚想在日本工作。'
+    exampleChinese: '早晚想在日本工作。',
+    accent: '0'
   },
   {
     category: '表达',
@@ -365,7 +387,8 @@ const customWords = [
     japanese: 'せっかく',
     kana: 'せっかく',
     example: 'せっかく来たので、少し見学しましょう。',
-    exampleChinese: '难得来了，就稍微参观一下吧。'
+    exampleChinese: '难得来了，就稍微参观一下吧。',
+    accent: '0'
   },
   {
     category: '表达',
@@ -373,7 +396,8 @@ const customWords = [
     japanese: 'つまり',
     kana: 'つまり',
     example: 'つまり、計画を変更する必要があります。',
-    exampleChinese: '也就是说，需要改变计划。'
+    exampleChinese: '也就是说，需要改变计划。',
+    accent: '1'
   },
   {
     category: '表达',
@@ -381,7 +405,8 @@ const customWords = [
     japanese: 'たとえ',
     kana: 'たとえ',
     example: 'たとえ忙しくても、連絡してください。',
-    exampleChinese: '即使很忙，也请联系我。'
+    exampleChinese: '即使很忙，也请联系我。',
+    accent: '0'
   },
   {
     category: '表达',
@@ -413,7 +438,8 @@ const customWords = [
     japanese: 'いったん',
     kana: 'いったん',
     example: 'いったん家に帰ってから出かけます。',
-    exampleChinese: '先回一趟家再出门。'
+    exampleChinese: '先回一趟家再出门。',
+    accent: '0'
   },
   {
     category: '表达',
@@ -421,7 +447,8 @@ const customWords = [
     japanese: 'むしろ',
     kana: 'むしろ',
     example: 'これは問題ではなく、むしろチャンスです。',
-    exampleChinese: '这不是问题，反而是机会。'
+    exampleChinese: '这不是问题，反而是机会。',
+    accent: '1'
   },
   {
     category: '表达',
@@ -437,7 +464,8 @@ const customWords = [
     japanese: 'おそらく',
     kana: 'おそらく',
     example: 'おそらく明日は雨でしょう。',
-    exampleChinese: '明天恐怕会下雨吧。'
+    exampleChinese: '明天恐怕会下雨吧。',
+    accent: '2'
   },
   {
     category: '表达',
@@ -445,7 +473,8 @@ const customWords = [
     japanese: 'わざわざ',
     kana: 'わざわざ',
     example: 'わざわざ来てくれてありがとうございます。',
-    exampleChinese: '谢谢你特意过来。'
+    exampleChinese: '谢谢你特意过来。',
+    accent: '1'
   },
   {
     category: '表达',
@@ -453,7 +482,8 @@ const customWords = [
     japanese: 'あえて',
     kana: 'あえて',
     example: 'あえて難しい道を選びました。',
-    exampleChinese: '我特意选择了困难的道路。'
+    exampleChinese: '我特意选择了困难的道路。',
+    accent: '1'
   },
   {
     category: '表达',
@@ -461,7 +491,8 @@ const customWords = [
     japanese: 'さすが',
     kana: 'さすが',
     example: 'さすがプロですね。',
-    exampleChinese: '不愧是专业人士。'
+    exampleChinese: '不愧是专业人士。',
+    accent: '0'
   },
   {
     category: '表达',
@@ -469,7 +500,8 @@ const customWords = [
     japanese: 'うっかり',
     kana: 'うっかり',
     example: 'うっかり財布を忘れました。',
-    exampleChinese: '不小心忘带钱包了。'
+    exampleChinese: '不小心忘带钱包了。',
+    accent: '3'
   },
   {
     category: '表达',
@@ -477,7 +509,8 @@ const customWords = [
     japanese: 'つい',
     kana: 'つい',
     example: 'おいしくて、つい食べ過ぎました。',
-    exampleChinese: '太好吃了，不由得吃多了。'
+    exampleChinese: '太好吃了，不由得吃多了。',
+    accent: '1'
   },
   {
     category: '表达',
@@ -485,7 +518,8 @@ const customWords = [
     japanese: 'ようやく',
     kana: 'ようやく',
     example: 'ようやく問題が解決しました。',
-    exampleChinese: '问题终于解决了。'
+    exampleChinese: '问题终于解决了。',
+    accent: '0'
   },
   {
     category: '表达',
@@ -493,7 +527,8 @@ const customWords = [
     japanese: 'あくまで',
     kana: 'あくまで',
     example: 'これはあくまで私の意見です。',
-    exampleChinese: '这始终只是我的意见。'
+    exampleChinese: '这始终只是我的意见。',
+    accent: '1'
   },
   {
     category: '表达',
@@ -501,7 +536,8 @@ const customWords = [
     japanese: 'いわゆる',
     kana: 'いわゆる',
     example: 'これはいわゆる成功例です。',
-    exampleChinese: '这就是所谓的成功案例。'
+    exampleChinese: '这就是所谓的成功案例。',
+    accent: '3'
   },
   {
     category: '表达',
@@ -509,7 +545,8 @@ const customWords = [
     japanese: 'なかなか',
     kana: 'なかなか',
     example: 'この問題はなかなか難しいです。',
-    exampleChinese: '这个问题相当难。'
+    exampleChinese: '这个问题相当难。',
+    accent: '0'
   },
   {
     category: '表达',
@@ -517,7 +554,8 @@ const customWords = [
     japanese: '次第に',
     kana: 'しだいに',
     example: '次第に日本語に慣れてきました。',
-    exampleChinese: '渐渐习惯日语了。'
+    exampleChinese: '渐渐习惯日语了。',
+    accent: '0'
   },
   {
     category: '表达',
@@ -525,7 +563,8 @@ const customWords = [
     japanese: '逆に',
     kana: 'ぎゃくに',
     example: '逆に質問してもいいですか。',
-    exampleChinese: '我可以反过来问个问题吗？'
+    exampleChinese: '我可以反过来问个问题吗？',
+    accent: '0'
   },
   {
     category: '表达',
@@ -541,7 +580,8 @@ const customWords = [
     japanese: '本来',
     kana: 'ほんらい',
     example: '本来なら今日は休みです。',
-    exampleChinese: '按理说今天本来是休息日。'
+    exampleChinese: '按理说今天本来是休息日。',
+    accent: '1'
   },
   {
     category: '表达',
@@ -589,7 +629,8 @@ const customWords = [
     japanese: '気づく',
     kana: 'きづく',
     example: '間違いに気づいて、すぐ直しました。',
-    exampleChinese: '注意到错误后，马上改正了。'
+    exampleChinese: '注意到错误后，马上改正了。',
+    accent: '2'
   },
   {
     category: '気表达',
@@ -637,7 +678,8 @@ const customWords = [
     japanese: '気合い',
     kana: 'きあい',
     example: '試験の前に気合いを入れました。',
-    exampleChinese: '考试前鼓足了干劲。'
+    exampleChinese: '考试前鼓足了干劲。',
+    accent: '0'
   }
 ]
 
