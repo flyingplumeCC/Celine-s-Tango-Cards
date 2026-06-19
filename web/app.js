@@ -127,7 +127,7 @@ function bindEvents() {
   elements['unknown-button'].addEventListener('click', () => markAnswer(false))
   elements['delete-button'].addEventListener('click', deleteCurrentWord)
   elements['restart-button'].addEventListener('click', restartQuiz)
-  elements['speak-button'].addEventListener('click', () => speakJapanese(state.words[state.currentIndex]?.japanese))
+  elements['speak-button'].addEventListener('click', () => speakJapanese(state.words[state.currentIndex]?.kana))
   elements['voice-select'].addEventListener('change', event => {
     state.selectedVoiceName = event.target.value
     saveText(VOICE_STORAGE_KEY, state.selectedVoiceName)
@@ -304,7 +304,7 @@ function renderReview(reviewWords) {
         <strong class="review-chinese">${word.chinese}</strong>
         <div class="review-pronunciation-row">
           <span class="review-japanese">${word.japanese}</span>
-          <button class="speak-button" type="button" data-text="${escapeAttribute(word.japanese)}" aria-label="播放${escapeAttribute(word.japanese)}的读音">读音</button>
+          <button class="speak-button" type="button" data-text="${escapeAttribute(word.kana)}" aria-label="播放${escapeAttribute(word.japanese)}的读音">读音</button>
         </div>
         <span class="review-kana">${word.kana}</span>
         <div class="divider"></div>
