@@ -1,6 +1,7 @@
 const REVIEW_THRESHOLD = 3
 const UNKNOWN_COUNTS_STORAGE_KEY = 'wordUnknownCounts'
 const DELETED_WORDS_STORAGE_KEY = 'deletedWordKeys'
+const VOICE_STORAGE_KEY = 'japaneseVoiceName'
 
 const state = {
   libraries: [],
@@ -15,6 +16,8 @@ const state = {
   showAnswer: false,
   completed: false,
   reviewMode: false,
+  japaneseVoices: [],
+  selectedVoiceName: loadText(VOICE_STORAGE_KEY),
   unknownCounts: loadObject(UNKNOWN_COUNTS_STORAGE_KEY),
   deletedWordKeys: loadObject(DELETED_WORDS_STORAGE_KEY)
 }
@@ -37,6 +40,8 @@ function bindElements() {
     'review-button',
     'quiz-title',
     'quiz-subtitle',
+    'voice-setting',
+    'voice-select',
     'quiz-panel',
     'review-panel',
     'quiz-card',
@@ -123,6 +128,10 @@ function bindEvents() {
   elements['delete-button'].addEventListener('click', deleteCurrentWord)
   elements['restart-button'].addEventListener('click', restartQuiz)
   elements['speak-button'].addEventListener('click', () => speakJapanese(state.words[state.currentIndex]?.japanese))
+  elements['voice-select'].addEventListener('change', event => {
+    state.selectedVoiceName = event.target.value
+    saveText(VOICE_STORAGE_KEY, state.selectedVoiceName)
+  })
   elements['review-panel'].addEventListener('click', event => {
     const button = event.target.closest('.speak-button')
 
@@ -130,6 +139,8 @@ function bindEvents() {
       speakJapanese(button.dataset.text)
     }
   })
+
+  setupVoices()
 }
 
 function renderHome() {
@@ -180,6 +191,7 @@ function showHome() {
 function showQuiz() {
   elements['home-view'].classList.add('hidden')
   elements['quiz-view'].classList.remove('hidden')
+  refreshVoiceOptions()
   renderQuiz()
 }
 
@@ -331,11 +343,12 @@ function speakJapanese(text) {
   window.speechSynthesis.cancel()
 
   const utterance = new SpeechSynthesisUtterance(text)
-  const voices = window.speechSynthesis.getVoices()
-  const japaneseVoice = voices.find(voice => voice.lang === 'ja-JP') || voices.find(voice => voice.lang.startsWith('ja'))
+  const voices = state.japaneseVoices.length > 0 ? state.japaneseVoices : getJapaneseVoices()
+  const japaneseVoice = voices.find(voice => voice.name === state.selectedVoiceName) || getPreferredJapaneseVoice(voices)
 
   utterance.lang = 'ja-JP'
-  utterance.rate = 0.85
+  utterance.rate = 0.82
+  utterance.pitch = 1
 
   if (japaneseVoice) {
     utterance.voice = japaneseVoice
@@ -344,10 +357,67 @@ function speakJapanese(text) {
   window.speechSynthesis.speak(utterance)
 }
 
+function setupVoices() {
+  if (!window.speechSynthesis) {
+    elements['voice-setting'].classList.add('hidden')
+    return
+  }
+
+  refreshVoiceOptions()
+  window.speechSynthesis.onvoiceschanged = refreshVoiceOptions
+}
+
+function refreshVoiceOptions() {
+  if (!window.speechSynthesis) {
+    return
+  }
+
+  state.japaneseVoices = getJapaneseVoices()
+
+  if (state.japaneseVoices.length === 0) {
+    elements['voice-setting'].classList.add('hidden')
+    return
+  }
+
+  const selectedVoice = state.japaneseVoices.find(voice => voice.name === state.selectedVoiceName) || getPreferredJapaneseVoice(state.japaneseVoices)
+  state.selectedVoiceName = selectedVoice?.name || ''
+
+  elements['voice-select'].innerHTML = state.japaneseVoices
+    .map(voice => `<option value="${escapeAttribute(voice.name)}">${escapeHtml(getVoiceLabel(voice))}</option>`)
+    .join('')
+  elements['voice-select'].value = state.selectedVoiceName
+  elements['voice-setting'].classList.remove('hidden')
+}
+
+function getJapaneseVoices() {
+  return window.speechSynthesis
+    .getVoices()
+    .filter(voice => voice.lang && voice.lang.toLowerCase().startsWith('ja'))
+}
+
+function getPreferredJapaneseVoice(voices) {
+  const betterNames = ['Kyoko', 'Otoya', 'Hattori', 'Haruka', 'Ichiro', 'Siri']
+
+  return betterNames
+    .map(name => voices.find(voice => voice.name.toLowerCase().includes(name.toLowerCase())))
+    .find(Boolean) || voices[0]
+}
+
+function getVoiceLabel(voice) {
+  return `${voice.name}（${voice.lang}）`
+}
+
 function escapeAttribute(value) {
   return String(value)
     .replace(/&/g, '&amp;')
     .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
 }
@@ -424,4 +494,16 @@ function loadObject(key) {
 
 function saveObject(key, value) {
   localStorage.setItem(key, JSON.stringify(value))
+}
+
+function loadText(key) {
+  try {
+    return localStorage.getItem(key) || ''
+  } catch (error) {
+    return ''
+  }
+}
+
+function saveText(key, value) {
+  localStorage.setItem(key, value)
 }
