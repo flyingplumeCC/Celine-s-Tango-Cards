@@ -32,22 +32,6 @@ const words = [
     exampleChinese: '今天的航班取消了。'
   },
   {
-    category: '酒店',
-    chinese: '入住手续',
-    japanese: 'チェックイン',
-    kana: 'ちぇっくいん',
-    example: 'チェックインをお願いします。',
-    exampleChinese: '请帮我办理入住。'
-  },
-  {
-    category: '酒店',
-    chinese: '退房',
-    japanese: 'チェックアウト',
-    kana: 'ちぇっくあうと',
-    example: 'チェックアウトは十一時です。',
-    exampleChinese: '退房时间是十一点。'
-  },
-  {
     category: '日常会话',
     chinese: '请再说一遍',
     japanese: 'もう一度お願いします',
@@ -112,28 +96,12 @@ const words = [
     exampleChinese: '入境审查花了一些时间。'
   },
   {
-    category: '机场',
-    chinese: '免税店',
-    japanese: '免税店',
-    kana: 'めんぜいてん',
-    example: '免税店でお土産を買います。',
-    exampleChinese: '在免税店购买伴手礼。'
-  },
-  {
     category: '航班',
     chinese: '登机牌',
     japanese: '搭乗券',
     kana: 'とうじょうけん',
     example: '搭乗券をなくさないでください。',
     exampleChinese: '请不要弄丢登机牌。'
-  },
-  {
-    category: '航班',
-    chinese: '座位',
-    japanese: '座席',
-    kana: 'ざせき',
-    example: '窓側の座席をお願いします。',
-    exampleChinese: '请给我靠窗的座位。'
   },
   {
     category: '航班',
@@ -169,67 +137,11 @@ const words = [
   },
   {
     category: '酒店',
-    chinese: '前台',
-    japanese: 'フロント',
-    kana: 'ふろんと',
-    example: 'フロントに鍵を預けます。',
-    exampleChinese: '把钥匙寄存在前台。'
-  },
-  {
-    category: '酒店',
-    chinese: '单人间',
-    japanese: 'シングルルーム',
-    kana: 'しんぐるるーむ',
-    example: 'シングルルームを一泊予約しました。',
-    exampleChinese: '预订了一晚单人间。'
-  },
-  {
-    category: '酒店',
-    chinese: '双人间',
-    japanese: 'ツインルーム',
-    kana: 'ついんるーむ',
-    example: 'ツインルームは空いていますか。',
-    exampleChinese: '双人间有空房吗？'
-  },
-  {
-    category: '酒店',
-    chinese: '房卡',
-    japanese: 'カードキー',
-    kana: 'かーどきー',
-    example: 'カードキーを部屋に忘れました。',
-    exampleChinese: '我把房卡忘在房间里了。'
-  },
-  {
-    category: '酒店',
-    chinese: '早餐',
-    japanese: '朝食',
-    kana: 'ちょうしょく',
-    example: '朝食は何時からですか。',
-    exampleChinese: '早餐几点开始？'
-  },
-  {
-    category: '酒店',
     chinese: '行李寄存',
     japanese: '荷物預かり',
     kana: 'にもつ あずかり',
     example: 'チェックアウト後に荷物預かりをお願いします。',
     exampleChinese: '退房后请帮我寄存行李。'
-  },
-  {
-    category: '酒店',
-    chinese: '有空房',
-    japanese: '空室',
-    kana: 'くうしつ',
-    example: '今夜、空室はありますか。',
-    exampleChinese: '今晚有空房吗？'
-  },
-  {
-    category: '酒店',
-    chinese: '无线网络',
-    japanese: '無線LAN',
-    kana: 'むせんらん',
-    example: '部屋で無線LANが使えます。',
-    exampleChinese: '房间里可以使用无线网络。'
   },
   {
     category: '酒店',
@@ -265,14 +177,6 @@ const words = [
   },
   {
     category: '酒店',
-    chinese: '毛毯',
-    japanese: '毛布',
-    kana: 'もうふ',
-    example: '毛布を一枚貸してください。',
-    exampleChinese: '请借给我一条毛毯。'
-  },
-  {
-    category: '酒店',
     chinese: '客房服务',
     japanese: 'ルームサービス',
     kana: 'るーむさーびす',
@@ -305,38 +209,6 @@ const words = [
   },
   {
     category: '酒店设施',
-    chinese: '迷你吧',
-    japanese: 'ミニバー',
-    kana: 'みにばー',
-    example: 'ミニバーの飲み物は有料ですか。',
-    exampleChinese: '迷你吧里的饮料收费吗？'
-  },
-  {
-    category: '酒店设施',
-    chinese: '空调',
-    japanese: 'エアコン',
-    kana: 'えあこん',
-    example: '部屋のエアコンが動きません。',
-    exampleChinese: '房间里的空调不工作。'
-  },
-  {
-    category: '酒店设施',
-    chinese: '吹风机',
-    japanese: 'ドライヤー',
-    kana: 'どらいやー',
-    example: 'ドライヤーは部屋にありますか。',
-    exampleChinese: '房间里有吹风机吗？'
-  },
-  {
-    category: '酒店设施',
-    chinese: '电热水壶',
-    japanese: '電気ケトル',
-    kana: 'でんき けとる',
-    example: '電気ケトルでお湯を沸かします。',
-    exampleChinese: '用电热水壶烧水。'
-  },
-  {
-    category: '酒店设施',
     chinese: '自助洗衣房',
     japanese: 'コインランドリー',
     kana: 'こいんらんどりー',
@@ -345,35 +217,11 @@ const words = [
   },
   {
     category: '酒店设施',
-    chinese: '健身房',
-    japanese: 'フィットネスジム',
-    kana: 'ふぃっとねすじむ',
-    example: 'フィットネスジムは朝六時から使えます。',
-    exampleChinese: '健身房早上六点起可以使用。'
-  },
-  {
-    category: '酒店设施',
-    chinese: '游泳池',
-    japanese: 'プール',
-    kana: 'ぷーる',
-    example: 'ホテルのプールは屋内にあります。',
-    exampleChinese: '酒店的游泳池在室内。'
-  },
-  {
-    category: '酒店设施',
     chinese: '大浴场',
     japanese: '大浴場',
     kana: 'だいよくじょう',
     example: '大浴場は最上階にあります。',
     exampleChinese: '大浴场在顶层。'
-  },
-  {
-    category: '酒店设施',
-    chinese: '温泉',
-    japanese: '温泉',
-    kana: 'おんせん',
-    example: 'ホテルの温泉に入ります。',
-    exampleChinese: '去泡酒店的温泉。'
   },
   {
     category: '酒店设施',
@@ -393,14 +241,6 @@ const words = [
   },
   {
     category: '酒店设施',
-    chinese: '电梯',
-    japanese: 'エレベーター',
-    kana: 'えれべーたー',
-    example: 'エレベーターはフロントの隣です。',
-    exampleChinese: '电梯在前台旁边。'
-  },
-  {
-    category: '酒店设施',
     chinese: '紧急出口',
     japanese: '非常口',
     kana: 'ひじょうぐち',
@@ -417,14 +257,6 @@ const words = [
   },
   {
     category: '打车',
-    chinese: '出租车站',
-    japanese: 'タクシー乗り場',
-    kana: 'たくしー のりば',
-    example: 'タクシー乗り場は駅の前です。',
-    exampleChinese: '出租车站在车站前面。'
-  },
-  {
-    category: '打车',
     chinese: '请去这里',
     japanese: 'ここまでお願いします',
     kana: 'ここまで おねがいします',
@@ -438,22 +270,6 @@ const words = [
     kana: 'ゆっくり はしってください',
     example: 'すみません、ゆっくり走ってください。',
     exampleChinese: '不好意思，请开慢一点。'
-  },
-  {
-    category: '打车',
-    chinese: '请停车',
-    japanese: '止めてください',
-    kana: 'とめてください',
-    example: '次の角で止めてください。',
-    exampleChinese: '请在下一个路口停车。'
-  },
-  {
-    category: '打车',
-    chinese: '车费',
-    japanese: '運賃',
-    kana: 'うんちん',
-    example: '空港までの運賃はいくらですか。',
-    exampleChinese: '去机场的车费是多少？'
   },
   {
     category: '打车',
@@ -480,36 +296,12 @@ const words = [
     exampleChinese: '请在新宿站换乘。'
   },
   {
-    category: '交通',
-    chinese: '公交车站',
-    japanese: 'バス停',
-    kana: 'ばすてい',
-    example: '空港行きのバス停はどこですか。',
-    exampleChinese: '去机场的公交车站在哪里？'
-  },
-  {
     category: '观光',
     chinese: '旅游服务中心',
     japanese: '観光案内所',
     kana: 'かんこう あんないじょ',
     example: '観光案内所で地図をもらいました。',
     exampleChinese: '在旅游服务中心拿到了地图。'
-  },
-  {
-    category: '观光',
-    chinese: '门票',
-    japanese: '入場券',
-    kana: 'にゅうじょうけん',
-    example: '美術館の入場券を二枚ください。',
-    exampleChinese: '请给我两张美术馆门票。'
-  },
-  {
-    category: '观光',
-    chinese: '伴手礼',
-    japanese: 'お土産',
-    kana: 'おみやげ',
-    example: '家族にお土産を買いました。',
-    exampleChinese: '给家人买了伴手礼。'
   },
   {
     category: '餐饮',
@@ -529,14 +321,6 @@ const words = [
   },
   {
     category: '铁路交通',
-    chinese: '新干线',
-    japanese: '新幹線',
-    kana: 'しんかんせん',
-    example: '新幹線で京都へ行きます。',
-    exampleChinese: '乘新干线去京都。'
-  },
-  {
-    category: '铁路交通',
     chinese: '指定席',
     japanese: '指定席',
     kana: 'していせき',
@@ -553,27 +337,11 @@ const words = [
   },
   {
     category: '铁路交通',
-    chinese: '站台',
-    japanese: 'ホーム',
-    kana: 'ほーむ',
-    example: '東京行きの電車は何番ホームですか。',
-    exampleChinese: '去东京的电车在几号站台？'
-  },
-  {
-    category: '铁路交通',
     chinese: '末班车',
     japanese: '終電',
     kana: 'しゅうでん',
     example: '終電は何時ですか。',
     exampleChinese: '末班车是几点？'
-  },
-  {
-    category: '购物',
-    chinese: '收银台',
-    japanese: 'レジ',
-    kana: 'れじ',
-    example: 'レジはどこですか。',
-    exampleChinese: '收银台在哪里？'
   },
   {
     category: '购物',
@@ -601,30 +369,6 @@ const words = [
   },
   {
     category: '旅行应急',
-    chinese: '警察局',
-    japanese: '警察署',
-    kana: 'けいさつしょ',
-    example: '近くの警察署はどこですか。',
-    exampleChinese: '附近的警察局在哪里？'
-  },
-  {
-    category: '旅行应急',
-    chinese: '医院',
-    japanese: '病院',
-    kana: 'びょういん',
-    example: '病院へ連れて行ってください。',
-    exampleChinese: '请带我去医院。'
-  },
-  {
-    category: '旅行应急',
-    chinese: '药店',
-    japanese: '薬局',
-    kana: 'やっきょく',
-    example: '薬局で風邪薬を買います。',
-    exampleChinese: '在药店购买感冒药。'
-  },
-  {
-    category: '旅行应急',
     chinese: '遗失物品',
     japanese: '忘れ物',
     kana: 'わすれもの',
@@ -638,6 +382,246 @@ const words = [
     kana: 'みちに まよう',
     example: '道に迷ってしまいました。',
     exampleChinese: '我迷路了。'
+  },
+  {
+    category: '机场',
+    chinese: '超重行李',
+    japanese: '重量超過',
+    kana: 'じゅうりょう ちょうか',
+    example: '荷物が重量超過になりました。',
+    exampleChinese: '行李超重了。'
+  },
+  {
+    category: '机场',
+    chinese: '行李损坏',
+    japanese: '荷物の破損',
+    kana: 'にもつの はそん',
+    example: '荷物の破損を申告したいです。',
+    exampleChinese: '我想申报行李损坏。'
+  },
+  {
+    category: '机场',
+    chinese: '遗失行李',
+    japanese: 'ロストバゲージ',
+    kana: 'ろすとばげーじ',
+    example: 'ロストバゲージの手続きをお願いします。',
+    exampleChinese: '请帮我办理遗失行李手续。'
+  },
+  {
+    category: '航班',
+    chinese: '候补名单',
+    japanese: 'キャンセル待ち',
+    kana: 'きゃんせるまち',
+    example: '早い便のキャンセル待ちはできますか。',
+    exampleChinese: '可以候补较早的航班吗？'
+  },
+  {
+    category: '航班',
+    chinese: '改签',
+    japanese: '便の変更',
+    kana: 'びんの へんこう',
+    example: '便の変更をしたいです。',
+    exampleChinese: '我想改签航班。'
+  },
+  {
+    category: '航班',
+    chinese: '登机开始',
+    japanese: '搭乗開始',
+    kana: 'とうじょう かいし',
+    example: '搭乗開始の時間を確認します。',
+    exampleChinese: '确认登机开始时间。'
+  },
+  {
+    category: '酒店',
+    chinese: '提前入住',
+    japanese: 'アーリーチェックイン',
+    kana: 'あーりーちぇっくいん',
+    example: 'アーリーチェックインは可能ですか。',
+    exampleChinese: '可以提前入住吗？'
+  },
+  {
+    category: '酒店',
+    chinese: '押金',
+    japanese: 'デポジット',
+    kana: 'でぽじっと',
+    example: 'チェックイン時にデポジットが必要です。',
+    exampleChinese: '入住时需要押金。'
+  },
+  {
+    category: '酒店',
+    chinese: '房间升级',
+    japanese: '部屋のアップグレード',
+    kana: 'へやの あっぷぐれーど',
+    example: '部屋のアップグレードはできますか。',
+    exampleChinese: '可以升级房间吗？'
+  },
+  {
+    category: '酒店',
+    chinese: '隔音',
+    japanese: '防音',
+    kana: 'ぼうおん',
+    example: '防音の部屋を希望します。',
+    exampleChinese: '希望要隔音的房间。'
+  },
+  {
+    category: '酒店',
+    chinese: '维修',
+    japanese: '修理',
+    kana: 'しゅうり',
+    example: 'エアコンの修理をお願いします。',
+    exampleChinese: '请维修空调。'
+  },
+  {
+    category: '酒店',
+    chinese: '空房等待',
+    japanese: '空室待ち',
+    kana: 'くうしつまち',
+    example: '空室待ちのリストに入れてください。',
+    exampleChinese: '请把我加入空房等待名单。'
+  },
+  {
+    category: '交通',
+    chinese: '临时停运',
+    japanese: '運休',
+    kana: 'うんきゅう',
+    example: '台風の影響で電車が運休しています。',
+    exampleChinese: '受台风影响，电车临时停运。'
+  },
+  {
+    category: '交通',
+    chinese: '绕行',
+    japanese: '迂回',
+    kana: 'うかい',
+    example: '事故のため、迂回してください。',
+    exampleChinese: '因事故，请绕行。'
+  },
+  {
+    category: '交通',
+    chinese: '单程',
+    japanese: '片道',
+    kana: 'かたみち',
+    example: '大阪まで片道でお願いします。',
+    exampleChinese: '请给我到大阪的单程票。'
+  },
+  {
+    category: '交通',
+    chinese: '往返',
+    japanese: '往復',
+    kana: 'おうふく',
+    example: '往復切符を買いました。',
+    exampleChinese: '买了往返票。'
+  },
+  {
+    category: '交通',
+    chinese: '检票口',
+    japanese: '改札口',
+    kana: 'かいさつぐち',
+    example: '中央改札口で待ち合わせましょう。',
+    exampleChinese: '在中央检票口碰头吧。'
+  },
+  {
+    category: '交通',
+    chinese: '时刻表',
+    japanese: '時刻表',
+    kana: 'じこくひょう',
+    example: '時刻表で終電を確認します。',
+    exampleChinese: '用时刻表确认末班车。'
+  },
+  {
+    category: '餐饮',
+    chinese: '预约座位',
+    japanese: '席の予約',
+    kana: 'せきの よやく',
+    example: '二人分の席の予約をお願いします。',
+    exampleChinese: '请预约两个人的座位。'
+  },
+  {
+    category: '餐饮',
+    chinese: '少放盐',
+    japanese: '塩分控えめ',
+    kana: 'えんぶん ひかえめ',
+    example: '塩分控えめでお願いします。',
+    exampleChinese: '请少放盐。'
+  },
+  {
+    category: '餐饮',
+    chinese: '分开付款',
+    japanese: '別々に払う',
+    kana: 'べつべつに はらう',
+    example: '別々に払ってもいいですか。',
+    exampleChinese: '可以分开付款吗？'
+  },
+  {
+    category: '餐饮',
+    chinese: '打包',
+    japanese: '持ち帰り',
+    kana: 'もちかえり',
+    example: '残りを持ち帰りできますか。',
+    exampleChinese: '剩下的可以打包吗？'
+  },
+  {
+    category: '购物',
+    chinese: '缺货',
+    japanese: '品切れ',
+    kana: 'しなぎれ',
+    example: 'このサイズは品切れですか。',
+    exampleChinese: '这个尺码缺货了吗？'
+  },
+  {
+    category: '购物',
+    chinese: '库存确认',
+    japanese: '在庫確認',
+    kana: 'ざいこ かくにん',
+    example: '他の店舗の在庫確認をお願いします。',
+    exampleChinese: '请帮我确认其他店的库存。'
+  },
+  {
+    category: '购物',
+    chinese: '瑕疵品',
+    japanese: '不良品',
+    kana: 'ふりょうひん',
+    example: 'これは不良品かもしれません。',
+    exampleChinese: '这个可能是瑕疵品。'
+  },
+  {
+    category: '观光',
+    chinese: '预约制',
+    japanese: '予約制',
+    kana: 'よやくせい',
+    example: 'この施設は予約制です。',
+    exampleChinese: '这个设施是预约制。'
+  },
+  {
+    category: '观光',
+    chinese: '导览',
+    japanese: 'ガイドツアー',
+    kana: 'がいどつあー',
+    example: '英語のガイドツアーに参加します。',
+    exampleChinese: '参加英语导览。'
+  },
+  {
+    category: '观光',
+    chinese: '临时休馆',
+    japanese: '臨時休館',
+    kana: 'りんじ きゅうかん',
+    example: '美術館は今日、臨時休館です。',
+    exampleChinese: '美术馆今天临时休馆。'
+  },
+  {
+    category: '旅行应急',
+    chinese: '身体不舒服',
+    japanese: '体調が悪い',
+    kana: 'たいちょうが わるい',
+    example: '体調が悪いので、病院に行きたいです。',
+    exampleChinese: '身体不舒服，想去医院。'
+  },
+  {
+    category: '旅行应急',
+    chinese: '被偷',
+    japanese: '盗まれる',
+    kana: 'ぬすまれる',
+    example: '財布を盗まれました。',
+    exampleChinese: '钱包被偷了。'
   }
 ]
 
