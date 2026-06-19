@@ -227,6 +227,19 @@ p {
   flex-direction: column;
 }
 
+.pronunciation-row,
+.review-pronunciation-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.review-pronunciation-row {
+  justify-content: flex-start;
+  margin-top: 12px;
+}
+
 .japanese,
 .review-japanese {
   color: #cc5f4a;
@@ -239,6 +252,22 @@ p {
 .review-kana {
   margin-top: 8px;
   color: #68747d;
+}
+
+.speak-button {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid #e3d6ca;
+  border-radius: 999px;
+  background: #fff;
+  color: #9b6858;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.speak-button:active {
+  transform: scale(0.97);
 }
 
 .divider {

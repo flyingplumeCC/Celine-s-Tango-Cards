@@ -46,6 +46,7 @@ function bindElements() {
     'answer-box',
     'answer-placeholder',
     'japanese-word',
+    'speak-button',
     'kana-word',
     'example-japanese',
     'example-chinese',
@@ -121,6 +122,14 @@ function bindEvents() {
   elements['unknown-button'].addEventListener('click', () => markAnswer(false))
   elements['delete-button'].addEventListener('click', deleteCurrentWord)
   elements['restart-button'].addEventListener('click', restartQuiz)
+  elements['speak-button'].addEventListener('click', () => speakJapanese(state.words[state.currentIndex]?.japanese))
+  elements['review-panel'].addEventListener('click', event => {
+    const button = event.target.closest('.speak-button')
+
+    if (button) {
+      speakJapanese(button.dataset.text)
+    }
+  })
 }
 
 function renderHome() {
@@ -281,7 +290,10 @@ function renderReview(reviewWords) {
           <span class="unknown-count">不熟 ${word.unknownCount} 次</span>
         </div>
         <strong class="review-chinese">${word.chinese}</strong>
-        <span class="review-japanese">${word.japanese}</span>
+        <div class="review-pronunciation-row">
+          <span class="review-japanese">${word.japanese}</span>
+          <button class="speak-button" type="button" data-text="${escapeAttribute(word.japanese)}" aria-label="播放${escapeAttribute(word.japanese)}的读音">读音</button>
+        </div>
         <span class="review-kana">${word.kana}</span>
         <div class="divider"></div>
         <span class="example-japanese">${word.example}</span>
@@ -309,6 +321,35 @@ function markAnswer(isKnown) {
   state.knownCount += isKnown ? 1 : 0
   state.answeredCount += 1
   pickRandomWord()
+}
+
+function speakJapanese(text) {
+  if (!text || !window.speechSynthesis) {
+    return
+  }
+
+  window.speechSynthesis.cancel()
+
+  const utterance = new SpeechSynthesisUtterance(text)
+  const voices = window.speechSynthesis.getVoices()
+  const japaneseVoice = voices.find(voice => voice.lang === 'ja-JP') || voices.find(voice => voice.lang.startsWith('ja'))
+
+  utterance.lang = 'ja-JP'
+  utterance.rate = 0.85
+
+  if (japaneseVoice) {
+    utterance.voice = japaneseVoice
+  }
+
+  window.speechSynthesis.speak(utterance)
+}
+
+function escapeAttribute(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
 }
 
 function deleteCurrentWord() {
