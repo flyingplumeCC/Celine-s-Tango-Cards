@@ -298,10 +298,12 @@ function renderReview(reviewWords) {
         <strong class="review-chinese">${word.chinese}</strong>
         <div class="review-pronunciation-row">
           <span class="review-japanese">${word.japanese}</span>
-          ${word.accent ? `<span class="accent-mark">${formatAccent(word.accent)}</span>` : ''}
-          <button class="speak-button" type="button" data-text="${escapeAttribute(word.kana)}" aria-label="播放${escapeAttribute(word.japanese)}的读音">读音</button>
         </div>
-        <span class="review-kana">${word.kana}</span>
+        <div class="kana-row review-kana-row">
+          <span class="review-kana">${word.kana}</span>
+          ${word.accent ? `<span class="accent-mark">${formatAccent(word.accent)}</span>` : ''}
+          <button class="speak-button" type="button" data-text="${escapeAttribute(word.kana)}" aria-label="播放${escapeAttribute(word.japanese)}的读音">🔊</button>
+        </div>
         <div class="divider"></div>
         <span class="example-japanese">${word.example}</span>
         <span class="example-chinese">${word.exampleChinese}</span>
