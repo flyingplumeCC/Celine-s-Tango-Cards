@@ -251,7 +251,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
+}
+
+.pronunciation-row {
+  flex-direction: column;
 }
 
 .review-pronunciation-row {
@@ -261,10 +266,14 @@ p {
 
 .japanese,
 .review-japanese {
+  width: 100%;
   color: var(--caramel);
   font-size: 36px;
   font-weight: 700;
+  line-height: 1.25;
   text-align: center;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .kana,
@@ -459,6 +468,11 @@ p {
   .chinese-word {
     font-size: clamp(30px, 10vw, 42px);
     letter-spacing: 0.5px;
+  }
+
+  .japanese,
+  .review-japanese {
+    font-size: 32px;
   }
 
   .answer-actions {
