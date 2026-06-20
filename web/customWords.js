@@ -680,6 +680,200 @@ const customWords = [
     example: '試験の前に気合いを入れました。',
     exampleChinese: '考试前鼓足了干劲。',
     accent: '0'
+  },
+  {
+    category: '动词',
+    chinese: '被包含；包含在内',
+    japanese: '含まれ',
+    kana: 'ふくまれ',
+    example: '料金には朝食代が含まれています。',
+    exampleChinese: '费用里包含早餐费。'
+  },
+  {
+    category: '商务',
+    chinese: '发送；寄送',
+    japanese: '送付します',
+    kana: 'そうふします',
+    example: '資料をメールで送付します。',
+    exampleChinese: '我会通过邮件发送资料。'
+  },
+  {
+    category: '商务',
+    chinese: '进行结算',
+    japanese: '決算を行います',
+    kana: 'けっさんを おこないます',
+    example: '年度末に決算を行います。',
+    exampleChinese: '年末进行结算。'
+  },
+  {
+    category: '动词',
+    chinese: '得到；获得',
+    japanese: '得る',
+    kana: 'える',
+    example: '経験から多くの知識を得ました。',
+    exampleChinese: '从经验中获得了很多知识。',
+    accent: '1'
+  },
+  {
+    category: '心理',
+    chinese: '挫折',
+    japanese: '挫折',
+    kana: 'ざせつ',
+    example: '一度の挫折で諦めないでください。',
+    exampleChinese: '不要因为一次挫折就放弃。',
+    accent: '0'
+  },
+  {
+    category: '表达',
+    chinese: '一朝一夕；短时间内',
+    japanese: '一朝一夕',
+    kana: 'いっちょういっせき',
+    example: '語学力は一朝一夕には身につきません。',
+    exampleChinese: '语言能力不是一朝一夕就能掌握的。'
+  },
+  {
+    category: '学校',
+    chinese: '放学后',
+    japanese: '放課後',
+    kana: 'ほうかご',
+    example: '放課後に図書館で勉強します。',
+    exampleChinese: '放学后在图书馆学习。',
+    accent: '0'
+  },
+  {
+    category: '学校',
+    chinese: '放学后留校',
+    japanese: '居残り',
+    kana: 'いのこり',
+    example: '宿題が終わらず、居残りになりました。',
+    exampleChinese: '作业没完成，所以被留下来了。',
+    accent: '0'
+  },
+  {
+    category: '感觉',
+    chinese: '迹象；气息；感觉',
+    japanese: '気配',
+    kana: 'けはい',
+    example: '部屋の外に人の気配がしました。',
+    exampleChinese: '感觉房间外有人。',
+    accent: '1'
+  },
+  {
+    category: '学习',
+    chinese: '掌握；习得',
+    japanese: '習得',
+    kana: 'しゅうとく',
+    example: '自然な表現を習得したいです。',
+    exampleChinese: '想掌握自然的表达。',
+    accent: '0'
+  },
+  {
+    category: '关系',
+    chinese: '相性；合不合',
+    japanese: '相性',
+    kana: 'あいしょう',
+    example: 'この勉強法は私と相性がいいです。',
+    exampleChinese: '这个学习方法和我很合。',
+    accent: '3'
+  },
+  {
+    category: '学习',
+    chinese: '效率',
+    japanese: '効率',
+    kana: 'こうりつ',
+    example: '効率よく単語を覚えたいです。',
+    exampleChinese: '想高效率地背单词。',
+    accent: '0'
+  },
+  {
+    category: '形容',
+    chinese: '高贵',
+    japanese: '高貴',
+    kana: 'こうき',
+    example: '高貴な雰囲気のある人です。',
+    exampleChinese: '是一个有高贵气质的人。',
+    accent: '1'
+  },
+  {
+    category: '形容',
+    chinese: '优雅；高级',
+    japanese: '上品',
+    kana: 'じょうひん',
+    example: '上品なデザインのバッグです。',
+    exampleChinese: '这是设计很优雅的包。',
+    accent: '3'
+  },
+  {
+    category: '形容',
+    chinese: '气质；品格',
+    japanese: '気品',
+    kana: 'きひん',
+    example: '彼女の話し方には気品があります。',
+    exampleChinese: '她的说话方式很有气质。',
+    accent: '0'
+  },
+  {
+    category: '动词',
+    chinese: '能描绘；能画出',
+    japanese: '描ける',
+    kana: 'えがける',
+    example: '頭の中で完成図を描けます。',
+    exampleChinese: '能在脑海里描绘出完成图。',
+    accent: '2'
+  },
+  {
+    category: '学习',
+    chinese: '记忆',
+    japanese: '記憶',
+    kana: 'きおく',
+    example: '新しい単語を記憶に残したいです。',
+    exampleChinese: '想把新单词留在记忆里。',
+    accent: '0'
+  },
+  {
+    category: '学习',
+    chinese: '系统；体系',
+    japanese: '系統',
+    kana: 'けいとう',
+    example: '単語を系統ごとに整理します。',
+    exampleChinese: '按系统分类整理单词。',
+    accent: '0'
+  },
+  {
+    category: '语言',
+    chinese: '方言',
+    japanese: '方言',
+    kana: 'ほうげん',
+    example: '地域によって方言が違います。',
+    exampleChinese: '不同地区方言不同。',
+    accent: '3'
+  },
+  {
+    category: '生活',
+    chinese: '负担',
+    japanese: '負担',
+    kana: 'ふたん',
+    example: '費用の負担が少し大きいです。',
+    exampleChinese: '费用负担有点大。',
+    accent: '0'
+  },
+  {
+    category: '学习',
+    chinese: '语言能力；词汇能力',
+    japanese: '語力',
+    kana: 'ごりょく',
+    example: '毎日の練習で語力を伸ばします。',
+    exampleChinese: '通过每天练习提升语言能力。',
+    accent: '1'
+  },
+  {
+    category: '表达',
+    chinese: '乍一看；初看',
+    japanese: '一見',
+    kana: 'いっけん',
+    example: '一見簡単そうですが、実は難しいです。',
+    exampleChinese: '乍一看好像简单，其实很难。',
+    accent: '0'
   }
 ]
 
