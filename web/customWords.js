@@ -874,6 +874,206 @@ const customWords = [
     example: '一見簡単そうですが、実は難しいです。',
     exampleChinese: '乍一看好像简单，其实很难。',
     accent: '0'
+  },
+  {
+    category: '表达',
+    chinese: '不得已；无可奈何',
+    japanese: 'やむを得ない',
+    kana: 'やむをえない',
+    example: 'やむを得ない事情で予定を変更しました。',
+    exampleChinese: '因为不得已的原因更改了计划。'
+  },
+  {
+    category: '表达',
+    chinese: '每……；按……',
+    japanese: 'ごとに',
+    kana: 'ごとに',
+    example: '章ごとに内容を整理します。',
+    exampleChinese: '按章节整理内容。'
+  },
+  {
+    category: '思考',
+    chinese: '当成自己的事',
+    japanese: '自分事',
+    kana: 'じぶんごと',
+    example: 'この問題を自分事として考えます。',
+    exampleChinese: '把这个问题当成自己的事来思考。'
+  },
+  {
+    category: '商务',
+    chinese: '反映；体现',
+    japanese: '反映',
+    kana: 'はんえい',
+    example: 'お客様の意見を資料に反映しました。',
+    exampleChinese: '把客户意见反映到了资料里。',
+    accent: '0'
+  },
+  {
+    category: '系统',
+    chinese: '故障；问题；异常',
+    japanese: '不具合',
+    kana: 'ふぐあい',
+    example: 'システムに不具合が発生しました。',
+    exampleChinese: '系统发生了异常。',
+    accent: '2'
+  },
+  {
+    category: '敬语',
+    chinese: '没关系；可以',
+    japanese: '構いません',
+    kana: 'かまいません',
+    example: '明日のご提出でも構いません。',
+    exampleChinese: '明天提交也没关系。'
+  },
+  {
+    category: '动词',
+    chinese: '进展顺利；效率高',
+    japanese: '捗る',
+    kana: 'はかどる',
+    example: '静かな場所だと仕事が捗ります。',
+    exampleChinese: '在安静的地方工作更顺利。',
+    accent: '3'
+  },
+  {
+    category: '形容',
+    chinese: '不成熟；不熟练',
+    japanese: '未熟',
+    kana: 'みじゅく',
+    example: 'まだ未熟ですが、少しずつ成長したいです。',
+    exampleChinese: '虽然还不成熟，但想一点点成长。',
+    accent: '0'
+  },
+  {
+    category: '动词',
+    chinese: '构建；建立',
+    japanese: '構築',
+    kana: 'こうちく',
+    example: '新しい仕組みを構築しています。',
+    exampleChinese: '正在构建新的机制。',
+    accent: '0'
+  },
+  {
+    category: '商务',
+    chinese: '处理',
+    japanese: '処理',
+    kana: 'しょり',
+    example: '本日中に申請を処理します。',
+    exampleChinese: '今天之内处理申请。',
+    accent: '1'
+  },
+  {
+    category: '思考',
+    chinese: '抽象',
+    japanese: '抽象',
+    kana: 'ちゅうしょう',
+    example: '抽象的な考えを具体例で説明します。',
+    exampleChinese: '用具体例子说明抽象的想法。',
+    accent: '0'
+  },
+  {
+    category: '思考',
+    chinese: '思考',
+    japanese: '思考',
+    kana: 'しこう',
+    example: '論理的な思考を身につけたいです。',
+    exampleChinese: '想掌握逻辑思考能力。',
+    accent: '0'
+  },
+  {
+    category: '时间',
+    chinese: '过去',
+    japanese: '過去',
+    kana: 'かこ',
+    example: '過去の経験から学びました。',
+    exampleChinese: '从过去的经验中学习了。',
+    accent: '1'
+  },
+  {
+    category: '学习',
+    chinese: '教训',
+    japanese: '教訓',
+    kana: 'きょうくん',
+    example: '今回の失敗を教訓にします。',
+    exampleChinese: '把这次失败作为教训。',
+    accent: '0'
+  },
+  {
+    category: '动词',
+    chinese: '看漏；错过',
+    japanese: '見逃す',
+    kana: 'みのがす',
+    example: '大事なポイントを見逃さないようにします。',
+    exampleChinese: '注意不要漏掉重要点。',
+    accent: '0'
+  },
+  {
+    category: '表达',
+    chinese: '正是；确实',
+    japanese: 'まさに',
+    kana: 'まさに',
+    example: 'これはまさに私が探していた資料です。',
+    exampleChinese: '这正是我一直在找的资料。',
+    accent: '1'
+  },
+  {
+    category: '动词',
+    chinese: '形成',
+    japanese: '形成',
+    kana: 'けいせい',
+    example: '良い習慣を形成することが大切です。',
+    exampleChinese: '形成好习惯很重要。',
+    accent: '0'
+  },
+  {
+    category: '形容',
+    chinese: '无限',
+    japanese: '無限',
+    kana: 'むげん',
+    example: '可能性は無限にあります。',
+    exampleChinese: '可能性是无限的。',
+    accent: '0'
+  },
+  {
+    category: '名词',
+    chinese: '网',
+    japanese: '網',
+    kana: 'あみ',
+    example: '魚を捕るために網を使います。',
+    exampleChinese: '用网捕鱼。',
+    accent: '2'
+  },
+  {
+    category: '名词',
+    chinese: '蜘蛛网',
+    japanese: '蜘蛛の巣',
+    kana: 'くものす',
+    example: '窓の近くに蜘蛛の巣がありました。',
+    exampleChinese: '窗户附近有蜘蛛网。'
+  },
+  {
+    category: '学习',
+    chinese: '分析',
+    japanese: '分析',
+    kana: 'ぶんせき',
+    example: 'データを分析して原因を調べます。',
+    exampleChinese: '分析数据来调查原因。',
+    accent: '0'
+  },
+  {
+    category: '表达',
+    chinese: '强行；勉强地',
+    japanese: '無理やり',
+    kana: 'むりやり',
+    example: '無理やり予定を入れないほうがいいです。',
+    exampleChinese: '最好不要强行安排计划。'
+  },
+  {
+    category: '动词',
+    chinese: '被盯上；成为目标',
+    japanese: '狙われる',
+    kana: 'ねらわれる',
+    example: '人気商品は転売業者に狙われやすいです。',
+    exampleChinese: '热门商品容易被转卖商盯上。'
   }
 ]
 
